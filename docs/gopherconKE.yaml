@@ -24,7 +24,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/User'
+                $ref: '#/components/schemas/UserRegistrationResponse'
         '400':
           description: Bad request
           content:
@@ -56,7 +56,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/User'
+                $ref: '#/components/schemas/UserLoginResponse'
         '401':
           description: Unauthorized
           content:
@@ -68,7 +68,38 @@ paths:
                   value:
                     message: "Invalid credentials."
                     code: 401
-
+  /users/{id}:
+    get:
+      summary: Get user by ID
+      operationId: getUserById
+      tags:
+        - Users
+      description: Get user details by user ID
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '404':
+          description: User not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                user_not_found:
+                  value:
+                    message: "User not found."
+                    code: 404
   /tickets/purchase:
     post:
       summary: Purchase a ticket
@@ -192,24 +223,70 @@ components:
     UserRegistrationRequest:
       type: object
       properties:
+        firstName:
+          type: string
+        lastName:
+          type: string
         username:
+          type: string
+        email:
           type: string
         password:
           type: string
+      required:
+        - firstName
+        - lastName
+        - username
+        - email
+        - password
+
+    UserRegistrationResponse:
+        type: object
+        properties:
+          userId:
+            type: integer
+          token:
+            type: string
+          tokenType:
+            type: string
+          expiry:
+            type: string
     UserLoginRequest:
       type: object
       properties:
-        username:
+        email:
           type: string
         password:
           type: string
+      required:
+        - email
+        - password
+
+    UserLoginResponse:
+        type: object
+        properties:
+          userId:
+            type: integer
+          token:
+            type: string
+          tokenType:
+            type: string
+          expiry:
+            type: string
     User:
       type: object
       properties:
         id:
           type: integer
+        firstName:
+          type: string
+        lastName:
+          type: string
         username:
           type: string
+        email:
+          type: string
+
     TicketPurchaseRequest:
       type: object
       properties:
