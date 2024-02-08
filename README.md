@@ -1,6 +1,22 @@
 # Nairobi Gophers
 Backend API for the upcoming Gophercon to be held in Kenya in 2024 (Date TBA).
 
+## Running the project locally
+1. Frontend
+To run the frontend, navigate to the `frontend` directory 
+```shell
+cd frontend
+```
+Install the dependencies
+```shell
+yarn install
+```
+
+Start the development server
+```shell
+yarn dev
+```
+
 The project is monolithic.
 ## Infrastructure
 - Docker    (Containerization)
