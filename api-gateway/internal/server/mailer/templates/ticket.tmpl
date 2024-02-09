@@ -1,0 +1,45 @@
+{{define "subject"}}Your Gophercon KE 2024 Ticket{{end}}
+
+{{define "plainBody"}}
+Dear {{.FirstName}} {{.LastName}},
+
+Thank you for purchasing a ticket for Gophercon KE 2024.
+Your ticket details are as follows:
+
+Event: {{.EventName}}
+Date: {{.EventDate}}
+Ticket ID: {{.TicketID}}
+
+Please keep this information safe.
+
+Thanks,
+The Gophercon KE 2024 Team
+{{end}}
+
+{{define "htmlBody"}}
+<!doctype html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+          /* TODOadd custom CSS  */
+    </style>
+</head>
+
+<body>
+<p>Dear {{.FirstName}} {{.LastName}},</p>
+<p>Thank you for purchasing a ticket for Gophercon KE 2024.</p>
+<p>Your ticket details are as follows:</p>
+<p><b>Event:</b> {{.EventName}}</p>
+<p><b>Date:</b> {{.EventDate}}</p>
+<p><b>Ticket ID:</b> {{.TicketID}}</p>
+<p>Please keep this information safe.</p>
+<p>Thanks,</p>
+<p>The Gophercon KE 2024 Team</p>
+</body>
+
+</html>
+{{end}}
+
