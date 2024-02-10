@@ -1,0 +1,339 @@
+openapi: 3.0.0
+info:
+  title: Gophercon-Africa-24
+  version: 1.0.0
+  description: This is an OpenAPI Specification Document  for Gophercon-KE-24
+  contact :
+paths:
+  /users/register:
+    post:
+      summary: Register a new user
+      operationId: registerUser
+      tags:
+        - Users
+      description: Register a new user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserRegistrationRequest'
+      responses:
+        '201':
+          description: User registered successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserRegistrationResponse'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                bad_request:
+                  value:
+                    message: "The request body is invalid."
+                    code: 400
+
+  /users/login:
+    post:
+      summary: User login
+      operationId: loginUser
+      tags:
+        - Users
+      description: Log in a user with valid credentials.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserLoginRequest'
+      responses:
+        '200':
+          description: User logged in successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserLoginResponse'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                unauthorized:
+                  value:
+                    message: "Invalid credentials."
+                    code: 401
+  /users/{id}:
+    get:
+      summary: Get user by ID
+      operationId: getUserById
+      tags:
+        - Users
+      description: Get user details by user ID
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '404':
+          description: User not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                user_not_found:
+                  value:
+                    message: "User not found."
+                    code: 404
+  /tickets/purchase:
+    post:
+      summary: Purchase a ticket
+      operationId: purchaseTicket
+      tags:
+        - Tickets
+      description: Purchase a ticket for the specified event.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TicketPurchaseRequest'
+      responses:
+        '201':
+          description: Ticket purchased successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Ticket'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                bad_request:
+                  value:
+                    message: "Invalid ticket purchase request."
+                    code: 400
+
+  /payment/mpesa:
+    post:
+      summary: Make payment using Mpesa
+      operationId: mpesaPayment
+      tags:
+        - Payments
+      description: Make a payment for a purchased ticket using Mpesa.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/MpesaPaymentRequest'
+      responses:
+        '200':
+          description: Payment successful
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PaymentResponse'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                bad_request:
+                  value:
+                    message: "Invalid Mpesa payment request."
+                    code: 400
+        '422':
+          description: Unprocessable Entity
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                payment_failed:
+                  value:
+                    message: "Payment unsuccessful. Ticket not generated."
+                    code: 422
+
+  /tickets/generate:
+    post:
+      summary: Generate ticket and send email
+      operationId: generateTicketAndEmail
+      tags:
+        - Tickets
+      description: Generate a ticket and send an email to the user.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TicketGenerationRequest'
+      responses:
+        '200':
+          description: Ticket generated and email sent successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Ticket'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                bad_request:
+                  value:
+                    message: "Invalid ticket generation request."
+                    code: 400
+        '422':
+          description: Unprocessable Entity
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                email_failed:
+                  value:
+                    message: "Email sending failed. Ticket not generated."
+                    code: 422
+
+components:
+  schemas:
+    UserRegistrationRequest:
+      type: object
+      properties:
+        firstName:
+          type: string
+        lastName:
+          type: string
+        username:
+          type: string
+        email:
+          type: string
+        password:
+          type: string
+      required:
+        - firstName
+        - lastName
+        - username
+        - email
+        - password
+
+    UserRegistrationResponse:
+        type: object
+        properties:
+          userId:
+            type: integer
+          token:
+            type: string
+          tokenType:
+            type: string
+          expiry:
+            type: string
+    UserLoginRequest:
+      type: object
+      properties:
+        email:
+          type: string
+        password:
+          type: string
+      required:
+        - email
+        - password
+
+    UserLoginResponse:
+        type: object
+        properties:
+          userId:
+            type: integer
+          token:
+            type: string
+          tokenType:
+            type: string
+          expiry:
+            type: string
+    User:
+      type: object
+      properties:
+        id:
+          type: integer
+        firstName:
+          type: string
+        lastName:
+          type: string
+        username:
+          type: string
+        email:
+          type: string
+
+    TicketPurchaseRequest:
+      type: object
+      properties:
+        eventName:
+          type: string
+        quantity:
+          type: integer
+    Ticket:
+      type: object
+      properties:
+        id:
+          type: integer
+        eventName:
+          type: string
+        quantity:
+          type: integer
+    MpesaPaymentRequest:
+      type: object
+      properties:
+        phoneNumber:
+          type: string
+        amount:
+          type: number
+    PaymentResponse:
+      type: object
+      properties:
+        transactionId:
+          type: string
+    TicketGenerationRequest:
+      type: object
+      properties:
+        userId:
+          type: integer
+        eventName:
+          type: string
+        quantity:
+          type: integer
+        userEmail:
+          type: string
+    Error:
+      type: object
+      description: Represents an HTTP error
+      properties:
+        error_code:
+          type: number
+        message:
+          type: string
+servers:
+  - description: Event  API
+    url: https://gopherconafrica.com/api/v1
