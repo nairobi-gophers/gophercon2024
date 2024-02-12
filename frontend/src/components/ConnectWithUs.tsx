@@ -3,7 +3,7 @@ import xLogo from "../assets/xLogo.png";
 
 export  default  function ConnectWithUs() {
   return (
-    <section className={"py-8 text-center max-w-[1440px] mx-auto px-4"}>
+    <section className={"my-12 text-center max-w-[1440px] mx-auto px-4"}>
       <div>
         <h2 className={"text-4xl  md:text-4xl font-bold text-secondary mb-2"}>
           Connect with us
@@ -11,10 +11,10 @@ export  default  function ConnectWithUs() {
         <hr className={"bg-primary w-[80px] h-2 m-auto mb-2"} />
         <p
           className={
-            "text-gray-500 mb-5 text-center text-sm max-w-[500px] m-auto"
+            "text-gray-500 mb-5 text-center max-w-[500px] m-auto"
           }
         >
-          Stay in the loop! Engage with us on social media to get the latest
+          Stay in the loop. Engage with us on social media to get the latest
           events
         </p>
       </div>
