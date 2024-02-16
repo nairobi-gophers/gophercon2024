@@ -1,4 +1,7 @@
 @tailwind base;
+html {
+    scroll-behavior: smooth;
+}
 @tailwind components;
 @tailwind utilities;
 
@@ -13,6 +16,6 @@
 
 
     .section-button {
-        @apply bg-primary text-white px-10 py-5 rounded-[30px] font-bold mb-3 capitalize
+        @apply bg-primary text-white px-10 py-5 rounded-full font-bold capitalize
     }
 }
