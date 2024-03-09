@@ -12,10 +12,14 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "latest"
-      - run: cd frontend
-      - run: ls -al
-      - run: npm ci
-      - run: npm run build --if-present
+      - name: Npm install
+        run: |
+          cd frontend
+          npm ci
+      - name: Npm build
+        run: |
+          cd frontend
+          npm run build --if-present
         env:
           CI: false
       - name: Copy folder content recursively to vps
