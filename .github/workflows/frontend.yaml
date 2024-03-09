@@ -14,21 +14,19 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "latest"
+          node-version: latest
       - name: Npm install
         run: |
           yarn install
       - name: Npm build
         run: |
           yarn build
-        env:
-          CI: false
-      - name: Copy folder content recursively to vps
-        uses: garygrossgarten/github-action-scp@release
+      - name: Deploy to VPS
+        uses: appleboy/scp-action@v4
         with:
-          local: build
-          remote: /var/www/html/build
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
+          source: "./dist/*"
+          target: "/var/www/gophercon"
       - run: echo "🍏 This job's status is ${{ job.status }}."
