@@ -27,6 +27,6 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.SKEY }}
           REMOTE_HOST: ${{ secrets.HOST }}
           REMOTE_USER: ${{ secrets.USERNAME }}
-          SOURCE: "dist/"
+          SOURCE: "frontend/dist/"
           TARGET: ${{ secrets.REMOTE_TARGET }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
