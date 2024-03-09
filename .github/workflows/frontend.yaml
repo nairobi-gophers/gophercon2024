@@ -27,6 +27,7 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
-          source: "./dist/*"
+          source: "dist/*"
           target: "/var/www/gophercon"
+          rm: true
       - run: echo "🍏 This job's status is ${{ job.status }}."
