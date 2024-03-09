@@ -67,7 +67,7 @@ const Ticket = () => {
               </div>
               <div className="flex items-center justify-center">
                 <a
-                  href=""
+                  href="mailto:marvin@appslab.co.ke"
                   className="px-8 py-2 my-2 md:my-0 text-center w-full md:mt-0 rounded-full bg-primary cursor-pointer text-white font-bold md:text-lg"
                 >
                   Contact Organizers
@@ -83,7 +83,7 @@ const Ticket = () => {
               </div>
               <div className="flex items-center justify-center">
                 <a
-                  href=""
+                  href="mailto:marvin@appslab.co.ke"
                   className="px-8 py-2  my-2 md:my-0 text-center w-full md:mt-0 rounded-full bg-primary cursor-pointer text-white font-bold md:text-lg"
                 >
                   Contact Organizers

@@ -1,8 +1,12 @@
 name: Frontend Deployment
 on:
+  pull_request:
+    branches:
+      - main
   push:
     branches:
-      - setup/deployment
+      - main
+      - hotfix
 jobs:
   Deploy:
     runs-on: ubuntu-latest
@@ -29,4 +33,4 @@ jobs:
           REMOTE_USER: ${{ secrets.USERNAME }}
           SOURCE: "frontend/dist/"
           TARGET: ${{ secrets.REMOTE_TARGET }}
-      - run: echo "🍏 This job's status is ${{ job.status }}."
+      - run: echo "This job's status is ${{ job.status }}."
