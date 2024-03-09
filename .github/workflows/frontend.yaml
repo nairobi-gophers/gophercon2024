@@ -22,7 +22,7 @@ jobs:
         run: |
           yarn build
       - name: Deploy to VPS
-        uses: appleboy/scp-action@0.1.7
+        uses: appleboy/scp-action@master
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
