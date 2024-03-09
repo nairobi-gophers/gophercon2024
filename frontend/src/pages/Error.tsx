@@ -1,8 +1,10 @@
 export default function Error() {
   return (
     <>
-      <h1>Error</h1>
-      <p>404</p>
+      <div className="flex justify-center items-center m-auto">
+        <h1>Panic Mode</h1>
+        <p>404</p>
+      </div>
     </>
   );
 }

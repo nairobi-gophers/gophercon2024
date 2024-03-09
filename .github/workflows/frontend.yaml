@@ -1,0 +1,27 @@
+name: Frontend Deployment
+on:
+  push:
+    branches:
+      - setup/deployment
+jobs:
+  Deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "10.x"
+      - run: npm ci
+      - run: npm run build --if-present
+        env:
+          CI: false
+      - name: Copy folder content recursively to vps
+        uses: garygrossgarten/github-action-scp@release
+        with:
+          local: build
+          remote: /var/www/html/build
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+      - run: echo "🍏 This job's status is ${{ job.status }}."

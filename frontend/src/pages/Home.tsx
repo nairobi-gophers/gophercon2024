@@ -3,6 +3,7 @@ import CallForSpeakers from "../components/CallForSpeakers.tsx";
 import ConnectWithUs from "../components/ConnectWithUs.tsx";
 import { Footer } from "../components/Footer.tsx";
 import Logo from "../assets/nairobi-gophers.png";
+import Ticket from "../components/Ticket.tsx";
 
 export default function Home() {
   return (
@@ -14,10 +15,10 @@ export default function Home() {
       >
         <div className={"mt-12 md:mt-20"}>
           <div className="my-4 text-center leading-8 md:leading-10">
-            <h1 className={"text-3xl md:text-5xl font-bold text-secondary"}>
+            <h1 className={"text-3xl md:text-5xl font-bold text-gray-600"}>
               GOPHERCON AFRICA
             </h1>
-            <p className="text-4xl md:text-7xl tracking-wide font-bold md:my-4">
+            <p className="text-4xl md:text-7xl tracking-wide text-secondary font-bold md:my-4">
               NAIROBI
             </p>
             <p className="italic text-2xl md:text-4xl font-semibold text-gray-900 text-shadow-lg animate-pulse shadow-primary">
@@ -33,20 +34,38 @@ export default function Home() {
           </div>
           <p
             className={
-              "max-w-[800px] px-4 md:text-xl my-6 m-auto text-gray-700 mb-5"
+              "max-w-[800px] px-4 md:text-xl my-2 m-auto text-gray-700 mb-2"
             }
           >
-            The 1st Gophercon Africa event is here, bringing together the
-            continent's top Go programming enthusiasts to for an <b>2 day</b>{" "}
-            thrilling event in <b>Nairobi, Kenya.</b>
+            We are proud to announce the 1st Gophercon conference in Africa, to
+            highlight the continent's premier Go programming talent, experts,
+            and enthusiasts. And we invites both local and international
+            participants. Centered on the Go programming language and related
+            subjects, let's join forces and turn this into an unforgettable Go
+            event by grabbing your ticket or coming on board as a sponsor.
           </p>
-          <button
-            className={
-              "px-6 py-4 mt-4 md:mt-16 rounded-full bg-primary cursor-pointer text-white font-bold md:text-lg"
-            }
-          >
-            Tickets Coming soon
-          </button>
+          <p className="font-semibold">
+            Venue:{" "}
+            <span className="font-normal">Daystar University(tentative)</span>
+          </p>
+          <div className="flex md:space-x-8 flex-col mt-2 md:flex-row items-center justify-center md:justify-center">
+            <a
+              href="#tickets"
+              className={
+                "px-6 py-4 mt-4 mb-2 md:mb-0 md:mt-16 rounded-full bg-primary cursor-pointer text-white font-bold md:text-lg"
+              }
+            >
+              Buy Your Ticket
+            </a>
+            <button
+              disabled={true}
+              className={
+                "px-6 py-4 mt-4 md:mt-16 rounded-full bg-gray-300 cursor-not-allowed text-white font-bold md:text-lg"
+              }
+            >
+              Call for speakers(coming soon)
+            </button>
+          </div>
 
           <div className="flex absolute w-full bottom-0 justify-center items-center cursor-pointer">
             <a href="#cfs">
@@ -68,6 +87,7 @@ export default function Home() {
       </div>
 
       <CallForSpeakers />
+      <Ticket />
       <Sponsors />
       <ConnectWithUs />
       <Footer />
