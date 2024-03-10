@@ -61,9 +61,14 @@ const Ticket = () => {
           })}
           <li className="border px-4 md:px-8 py-4">
             <div className="md:flex md:justify-between ">
-              <div className="pr-4 md:justify-between flex items-center justify-center">
+              <div className="pr-4 md:w-[80%] md:justify-between justify-center">
                 <p className="font-semibold">Sponsor tickets</p>
-                <p></p>
+                <p>
+                  If you're interested in sponsoring fellow Gophers to attend
+                  and benefit from GopherCon Africa, your support would be
+                  greatly appreciated. Please contact the organizing team to get
+                  involved.
+                </p>
               </div>
               <div className="flex items-center justify-center">
                 <a
