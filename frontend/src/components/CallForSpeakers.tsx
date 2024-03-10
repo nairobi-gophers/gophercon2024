@@ -2,7 +2,10 @@ import speakersImage from "../assets/speakersImage.png";
 
 export default function CallForSpeakers() {
   return (
-    <section id="cfs" className="py-4 mt-12 md:flex md:flex-row items-center md:h-[50vh] md:px-12 md:gap-[150px] bg-accent max-w-[1440px] mx-auto px-4">
+    <section
+      id="cfs"
+      className="py-4 mt-12 md:mt-4 md:flex md:flex-row items-center md:px-12 bg-accent max-w-[1440px] mx-auto px-4"
+    >
       <div className="md:w-1/2 flex justify-center items-center">
         <img
           src={speakersImage}

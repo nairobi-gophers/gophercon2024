@@ -4,13 +4,32 @@ import ConnectWithUs from "../components/ConnectWithUs.tsx";
 import { Footer } from "../components/Footer.tsx";
 import Logo from "../assets/nairobi-gophers.png";
 import Ticket from "../components/Ticket.tsx";
+import {useEffect, useState} from "react";
 
-export default function Home() {
+const Home = () => {
+  const [isVisible, setIsVisible] = useState<boolean>(true)
+
+  const toggleVisibility = () => {
+    if (window.scrollY > 0) {
+      setIsVisible(false);
+    } else {
+      setIsVisible(true);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', toggleVisibility);
+
+    return () => {
+      window.removeEventListener('scroll', toggleVisibility);
+    };
+  }, []);
+
   return (
     <>
       <div
         className={
-          "h-[100vh] text-center flex flex-col items-center relative !w-[100vw]"
+          "relative min-h-screen text-center flex flex-col items-center !w-[100vw]"
         }
       >
         <div className={"mt-12 md:mt-20"}>
@@ -45,10 +64,10 @@ export default function Home() {
             event by grabbing your ticket or coming on board as a sponsor.
           </p>
           <p className="font-semibold">
-            Venue:{" "}
-            <span className="font-normal">Daystar University(tentative)</span>
+            Venue:
+            <span className="font-normal"> Daystar University(tentative)</span>
           </p>
-          <div className="flex md:space-x-8 flex-col mt-2 md:flex-row items-center justify-center md:justify-center">
+          <div className="flex md:space-x-8 flex-col mt-4 md:mt-8 md:flex-row items-center justify-center md:justify-center">
             <a
               href="#tickets"
               className={
@@ -67,7 +86,7 @@ export default function Home() {
             </button>
           </div>
 
-          <div className="flex absolute w-full bottom-0 justify-center items-center cursor-pointer">
+          {isVisible && <div className="fixed inset-x-0 pb-4 flex w-full bottom-0 justify-center items-center cursor-pointer">
             <a href="#cfs">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -82,7 +101,7 @@ export default function Home() {
                 </g>
               </svg>
             </a>
-          </div>
+          </div>}
         </div>
       </div>
 
@@ -93,4 +112,6 @@ export default function Home() {
       <Footer />
     </>
   );
-}
+};
+
+export default Home;
