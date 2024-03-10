@@ -6,7 +6,7 @@ export  default  function ConnectWithUs() {
     <section className={"my-12 text-center max-w-[1440px] mx-auto px-4"}>
       <div>
         <h2 className={"text-4xl  md:text-4xl font-bold text-secondary mb-2"}>
-          Connect with us
+          Updates and Network
         </h2>
         <hr className={"bg-primary w-[80px] h-2 m-auto mb-2"} />
         <p
