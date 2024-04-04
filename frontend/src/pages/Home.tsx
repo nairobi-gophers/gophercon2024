@@ -76,14 +76,13 @@ const Home = () => {
             >
               Buy Your Ticket
             </a>
-            <button
-              disabled={true}
+            <a href='#cfs'
               className={
-                "px-6 py-4 mt-4 md:mt-16 rounded-full bg-gray-300 cursor-not-allowed text-white font-bold md:text-lg"
+                "px-6 py-4 mt-4 md:mt-16 rounded-full bg-primary cursor-pointer text-white font-bold md:text-lg"
               }
             >
-              Call for speakers(coming soon)
-            </button>
+              Call for speakers
+            </a>
           </div>
 
           {isVisible && <div className="fixed inset-x-0 pb-4 flex w-full bottom-0 justify-center items-center cursor-pointer">
