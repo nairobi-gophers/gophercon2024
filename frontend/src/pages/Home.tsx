@@ -4,8 +4,10 @@ import ConnectWithUs from "../components/ConnectWithUs.tsx";
 import { Footer } from "../components/Footer.tsx";
 import Ticket from "../components/Ticket.tsx";
 import world from '../assets/world.svg';
+import nairobiGophers from '../assets/nairobi-gophers.png';
 import { useEffect, useState } from "react";
 import GopherconForAll from "../components/GopherconForAll.tsx";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const [isVisible, setIsVisible] = useState<boolean>(true)
@@ -27,13 +29,29 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="text-sm">
+    <div className="text-sm id" id='home'>
       <div className="h-[100vh] w-full relative">
-        <nav className="hidden lg:flex absolute top-0 p-3 w-fit mx-auto text-center left-0 right-0 text-secondary flex-row gap-3 text-sm">
-          <a>Home</a>
-          <a>Speakers</a>
-          <a>Tickets</a>
-          <a>Contact</a>
+        <nav className="relative flex flex-row p-3 border-b lg:hidden">
+          <div className="w-1/3">
+            Menu
+          </div>
+          <div className="w-1/3 flex flex-row items-center justify-center gap-3">
+            <img src={nairobiGophers} className=" w-12 h-12 object-center object-cover" />
+          </div>
+
+
+          <div className="w-1/3"></div>
+        </nav>
+        <nav className="hidden lg:flex absolute top-0 p-3 w-fit mx-auto text-center left-0 right-0 text-secondary flex-row gap-3 text-sm items-center bg-white">
+          <Link className=" mr-4" to='#home' >
+            <img src={nairobiGophers} className=" w-20 h-20 object-center object-cover" />
+          </Link>
+          <Link className="border-b-2 border-secondary p-3" to='#home'>Home</Link>
+
+          <Link className="border-b-2 border-white p-3" to='#speakers'>Speakers</Link>
+          <Link className="border-b-2 border-white p-3" to='#tickets'> Tickets</Link>
+          <Link className="border-b-2 border-white p-3" to='#sponsors'>Sponsors</Link>
+          <Link className="border-b-2 border-white p-3" to='#contact'>Contact</Link>
         </nav>
 
         <img src={world} alt='world' className="lg:w-full h-full object-cover" />

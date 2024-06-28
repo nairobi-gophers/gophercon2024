@@ -3,7 +3,7 @@ import speakersImage from "../assets/speakersImage.png";
 export default function CallForSpeakers() {
   return (
     <section
-      id="cfs"
+      id="speakers"
       className="container mx-auto bg-accent flex flex-col lg:flex-row lg:px-6 h-fit  lg:h-[50vh]"
     >
       <div className="md:w-1/2 flex justify-center items-center">

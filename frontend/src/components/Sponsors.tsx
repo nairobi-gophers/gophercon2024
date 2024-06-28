@@ -7,7 +7,7 @@ export default function Sponsors() {
       }
     >
       <div className="w-fit mx-auto text-center">
-        <h2 className="text-5xl  md:text-3xl font-bold text-secondary mb-3">Sponsors</h2>
+        <h2 className="text-5xl  md:text-3xl font-bold text-secondary mb-3">Sponsor The Event</h2>
         <p className="mb-6 text-justify text-sm"> Don't miss this chance to supercharge your brand and tap into the
           vibrant energy of Nairobi's Go programming community. Contact us today
           to explore sponsorship opportunities and join us in creating an
