@@ -5,12 +5,12 @@ function SponsorCard(props: { title: string, price: string, body: string, isPopu
 
   return (
     <div className={`p-6 rounded-lg  border text-center flex flex-col gap-6 h-[350px] justify-center relative ${isPopular ? ` bg-primary text-white border-white` : ' border-secondary mt-6 '}`}>
-      {isPopular ? <div className="bg-white text-primary px-2 py-1 w-fit text-xs absolute top-3 left-3 rounded-3xl font-bold">Popular</div> : null}
+      {isPopular ? <div className="bg-white text-primary px-2 py-1 w-fit text-xs absolute top-3 left-3 rounded-3xl font-semibold">Popular</div> : null}
       <h3 className="">{title}</h3>
       <p className="font-bold text-3xl">{price}</p>
       <p className="text-sm text-justify md:w-[300px]">{body}</p>
       <Link
-        className={`min-w-48 py-4 rounded-full capitalize text-sm  text-center w-fit mx-auto ${isPopular ? ` bg-white text-primary ` : ' bg-primary text-white '}`}
+        className={`min-w-48 py-4 rounded-full capitalize text-sm  text-center w-fit mx-auto font-semibold ${isPopular ? ` bg-white text-primary ` : ' bg-primary text-white '}`}
         to={link}
         target="_blank"
       >

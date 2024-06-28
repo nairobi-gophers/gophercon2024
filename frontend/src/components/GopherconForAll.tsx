@@ -26,7 +26,7 @@ export default function GopherconForAll() {
           For more info, kindly contact us at <b>hello@gophers.africa</b>
         </div>
 
-        <a href="https://www.papercall.io/gophercon-africa" target={"_blank"} className="button w-fit mx-auto lg:m-0">Contact Us</a>
+        <a href={"mailto:hello@gophers.africa"} target={"_blank"} className="button w-fit mx-auto lg:m-0">Contact Us</a>
       </div>
 
       <div className="md:w-1/2 flex justify-center items-center p-6">

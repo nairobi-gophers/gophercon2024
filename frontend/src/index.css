@@ -16,6 +16,6 @@ html {
 
 
     .button {
-        @apply bg-primary text-white min-w-48 py-4 rounded-full capitalize text-sm  text-center 
+        @apply bg-primary text-white min-w-48 py-4 rounded-full capitalize text-sm  text-center font-semibold
     }
 }

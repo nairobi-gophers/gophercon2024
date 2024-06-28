@@ -14,7 +14,7 @@ export default function Sponsors() {
           unforgettable event.</p>
       </div>
 
-      <button className="button w-fit mx-auto">Sponsor The Event</button>
+      <a className="button w-fit mx-auto" href={"mailto:hello@gophers.africa"}>Sponsor The Event</a>
     </section>
   );
 }

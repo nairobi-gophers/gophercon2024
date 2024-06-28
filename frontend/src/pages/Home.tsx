@@ -85,10 +85,10 @@ const Home = () => {
             </Dialog.Root>
 
           </div>
+
           <div className="w-1/3 flex flex-row items-center justify-center gap-3">
             <img src={nairobiGophers} className=" w-12 h-12 object-center object-cover" />
           </div>
-
 
           <div className="w-1/3"></div>
         </nav>
@@ -118,7 +118,7 @@ const Home = () => {
             <p><b>Venue:</b> To be announced</p>
           </div>
 
-          <button className="px-8 py-3 text-white bg-primary  w-fit mx-auto rounded shadow "
+          <button className="px-8 py-3 text-white bg-primary  w-fit mx-auto rounded shadow font-semibold"
             onClick={() => scroll('tickets')}
           >Get Tickets</button>
         </div>
