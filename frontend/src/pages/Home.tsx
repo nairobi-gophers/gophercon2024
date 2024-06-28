@@ -5,6 +5,7 @@ import { Footer } from "../components/Footer.tsx";
 import Ticket from "../components/Ticket.tsx";
 import world from '../assets/world.svg';
 import { useEffect, useState } from "react";
+import GopherconForAll from "../components/GopherconForAll.tsx";
 
 const Home = () => {
   const [isVisible, setIsVisible] = useState<boolean>(true)
@@ -55,6 +56,7 @@ const Home = () => {
 
       <CallForSpeakers />
       <Ticket />
+      <GopherconForAll />
       <Sponsors />
       <ConnectWithUs />
       <Footer />
