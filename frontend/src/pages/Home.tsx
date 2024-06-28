@@ -108,7 +108,7 @@ const Home = () => {
 
         <div className="absolute top-16 lg:top-0 lg:bottom-0 my-auto p-6 lg:p-3 lg:w-[750px] mx-auto text-center left-0 right-0 h-fit flex flex-col gap-6">
           <h1 className="text-5xl lg:text-7xl font-bold text-primary">Gophercon Africa</h1>
-          <p className="lg:w-[600px]  text-justify mx-auto">
+          <p className="lg:w-[600px]  text-pretty mx-auto">
             Africa's first Gophercon arrives! Join local & international Go enthusiasts, experts, and rising stars for an unforgettable celebration of the Go programming language. Grab your ticket or become a sponsor - let's make history together!
           </p>
 
