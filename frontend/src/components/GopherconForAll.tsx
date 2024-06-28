@@ -33,7 +33,7 @@ export default function GopherconForAll() {
         <img
           src={contactUs}
           alt={"Call for speakers"}
-          className={"object-cover rounded w-8/12 h-8/12"}
+          className={"object-cover rounded md:w-9/12 md:h-9/12"}
         />
       </div>
     </section>
