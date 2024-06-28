@@ -28,30 +28,30 @@ const Home = () => {
   return (
     <>
       <div className="h-[100vh] w-full relative">
-        <nav className="absolute top-0 p-3 w-fit mx-auto text-center left-0 right-0 text-secondary flex flex-row gap-3 ">
+        <nav className="hidden lg:flex absolute top-0 p-3 w-fit mx-auto text-center left-0 right-0 text-secondary flex-row gap-3 text-sm">
           <a>Home</a>
           <a>Speakers</a>
           <a>Tickets</a>
           <a>Contact</a>
         </nav>
 
-        <img src={world} alt='world' className="w-full h-full object-cover" />
+        <img src={world} alt='world' className="lg:w-full h-full object-cover" />
 
-        <div className="absolute top-0 bottom-0 my-auto p-3 w-[750px] mx-auto text-center left-0 right-0 h-fit flex flex-col gap-6">
-          <h1 className="text-7xl font-bold text-primary">Gophercon Africa</h1>
-          <p className="w-[600px]  text-justify mx-auto">
+        <div className="absolute top-16 lg:top-0 lg:bottom-0 my-auto p-6 lg:p-3 lg:w-[750px] mx-auto text-center left-0 right-0 h-fit flex flex-col gap-6">
+          <h1 className="text-5xl lg:text-7xl font-bold text-primary">Gophercon Africa</h1>
+          <p className="lg:w-[600px]  text-justify mx-auto">
             Africa's first Gophercon arrives! Join local & international Go enthusiasts, experts, and rising stars for an unforgettable celebration of the Go programming language. Grab your ticket or become a sponsor - let's make history together!
           </p>
 
-          <div className="w-fit p-8 mx-auto border border-secondary rounded-md">
-            <p><b>Date:</b> 19-20 October 2024</p>
-            <p><b>City:</b> Nairobi,Kenya</p>
+          <div className="w-fit p-8 mx-auto border border-secondary rounded-md bg-white">
+            <p><b>Date:</b> 19-20th October 2024</p>
+            <p><b>City:</b> Nairobi, Kenya</p>
             <p><b>Venue:</b> To be announced</p>
           </div>
 
-          <button className="px-8 py-3 text-white bg-primary  w-fit mx-auto rounded">Get Tickets</button>
-        </div>
 
+          <button className="px-8 py-3 text-white bg-primary  w-fit mx-auto rounded shadow ">Get Tickets</button>
+        </div>
       </div>
 
 
