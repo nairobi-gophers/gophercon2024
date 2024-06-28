@@ -6,7 +6,6 @@ html {
 @tailwind utilities;
 
 @layer utilities {
-   
     .sponsor-card {
         @apply bg-accent p-8 w-[250px] h-[250px] m-auto md:min-w-[320px] md:h-[250px] rounded-lg flex flex-col
     }

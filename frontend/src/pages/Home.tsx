@@ -27,7 +27,7 @@ const Home = () => {
   }, []);
 
   return (
-    <>
+    <div className="text-sm">
       <div className="h-[100vh] w-full relative">
         <nav className="hidden lg:flex absolute top-0 p-3 w-fit mx-auto text-center left-0 right-0 text-secondary flex-row gap-3 text-sm">
           <a>Home</a>
@@ -60,7 +60,7 @@ const Home = () => {
       <Sponsors />
       <ConnectWithUs />
       <Footer />
-    </>
+    </div>
   );
 };
 
