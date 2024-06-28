@@ -33,10 +33,7 @@ const Home = () => {
 
   function scroll(to: string) {
     const element = document.getElementById(to);
-    element.scrollIntoView();
-    element.scrollIntoView(false);
-    element.scrollIntoView({ block: "end" });
-    element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+    element.scrollIntoView({ block: "start" });
   }
 
   return (
@@ -54,7 +51,7 @@ const Home = () => {
                   <Dialog.Title className="sr-only">
                     Navigation
                   </Dialog.Title>
-                  
+
                   <Dialog.Description className="sr-only">
                     Navigation
                   </Dialog.Description>
