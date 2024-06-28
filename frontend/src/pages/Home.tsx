@@ -7,8 +7,7 @@ import world from '../assets/world.svg';
 import nairobiGophers from '../assets/nairobi-gophers.png';
 import { useEffect, useState } from "react";
 import GopherconForAll from "../components/GopherconForAll.tsx";
-import { Link } from "react-router-dom";
-
+// import { HashLink } from 'react-router-hash-link';
 const Home = () => {
   const [isVisible, setIsVisible] = useState<boolean>(true)
 
@@ -31,32 +30,14 @@ const Home = () => {
   return (
     <div className="text-sm id" id='home'>
       <div className="h-[100vh] w-full relative">
-        <nav className="relative flex flex-row p-3 border-b lg:hidden">
-          <div className="w-1/3">
-            Menu
-          </div>
-          <div className="w-1/3 flex flex-row items-center justify-center gap-3">
-            <img src={nairobiGophers} className=" w-12 h-12 object-center object-cover" />
-          </div>
+        <div className="w-16 h-16 lg:w-20 lg:h-12  mx-auto left-0 right-0 absolute py-3">
+          <img src={nairobiGophers} className="object-center object-cover" />
+        </div>
 
-
-          <div className="w-1/3"></div>
-        </nav>
-        <nav className="hidden lg:flex absolute top-0 p-3 w-fit mx-auto text-center left-0 right-0 text-secondary flex-row gap-3 text-sm items-center bg-white">
-          <Link className=" mr-4" to='#home' >
-            <img src={nairobiGophers} className=" w-20 h-20 object-center object-cover" />
-          </Link>
-          <Link className="border-b-2 border-secondary p-3" to='#home'>Home</Link>
-
-          <Link className="border-b-2 border-white p-3" to='#speakers'>Speakers</Link>
-          <Link className="border-b-2 border-white p-3" to='#tickets'> Tickets</Link>
-          <Link className="border-b-2 border-white p-3" to='#sponsors'>Sponsors</Link>
-          <Link className="border-b-2 border-white p-3" to='#contact'>Contact</Link>
-        </nav>
 
         <img src={world} alt='world' className="lg:w-full h-full object-cover" />
 
-        <div className="absolute top-16 lg:top-0 lg:bottom-0 my-auto p-6 lg:p-3 lg:w-[750px] mx-auto text-center left-0 right-0 h-fit flex flex-col gap-6">
+        <div className="absolute top-20 lg:top-0 lg:bottom-0 my-auto p-6 lg:p-3 lg:w-[750px] mx-auto text-center left-0 right-0 h-fit flex flex-col gap-6">
           <h1 className="text-5xl lg:text-7xl font-bold text-primary">Gophercon Africa</h1>
           <p className="lg:w-[600px]  text-justify mx-auto">
             Africa's first Gophercon arrives! Join local & international Go enthusiasts, experts, and rising stars for an unforgettable celebration of the Go programming language. Grab your ticket or become a sponsor - let's make history together!
