@@ -19,13 +19,13 @@ export default function CallForSpeakers() {
           Call For Speakers
         </h2>
 
-        <p className={"text-justify lg:max-w-[500px] text-secondary"}>
+        <p className={"text-justify lg:max-w-[500px] text-secondary text-sm"}>
           We're looking for speakers to share their expertise with our
           enthusiastic audience. If you have a topic you'd like to present, we'd
           love to hear from you. Submit your proposal today!
         </p>
 
-        <a href="https://www.papercall.io/gophercon-africa" target={"_blank"} className="section-button w-fit mx-auto">Submit a Proposal</a>
+        <a href="https://www.papercall.io/gophercon-africa" target={"_blank"} className="button w-fit mx-auto lg:m-0">Submit a Proposal</a>
       </div>
     </section>
   );
