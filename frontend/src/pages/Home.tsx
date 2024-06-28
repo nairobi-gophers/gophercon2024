@@ -49,12 +49,9 @@ const Home = () => {
             <p><b>Venue:</b> To be announced</p>
           </div>
 
-
           <button className="px-8 py-3 text-white bg-primary  w-fit mx-auto rounded shadow ">Get Tickets</button>
         </div>
       </div>
-
-
 
       <CallForSpeakers />
       <Ticket />

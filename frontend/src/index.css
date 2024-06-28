@@ -17,6 +17,6 @@ html {
 
 
     .section-button {
-        @apply bg-primary text-white px-10 py-5 rounded-full font-bold capitalize
+        @apply bg-primary text-white px-10 py-5 rounded-full capitalize text-sm font-bold
     }
 }

@@ -4,25 +4,28 @@ export default function CallForSpeakers() {
   return (
     <section
       id="cfs"
-      className="py-4 mt-12 md:mt-4 md:flex md:flex-row items-center md:px-12 bg-accent max-w-[1440px] mx-auto px-4"
+      className="container mx-auto bg-accent flex flex-col lg:flex-row lg:px-6 h-fit  lg:h-[50vh]"
     >
       <div className="md:w-1/2 flex justify-center items-center">
         <img
           src={speakersImage}
-          alt={"go lang logo"}
+          alt={"Call for speakers"}
           className={"object-cover"}
         />
       </div>
-      <div className={"text-center md:w-1/2 md:text-left mb-4"}>
-        <h2 className={"text-2xl  md:text-3xl font-bold text-secondary mb-2"}>
-          Call for Speakers coming soon
+
+      <div className={"text-center md:w-1/2 p-6 md:text-left gap-3 flex flex-col lg:justify-center"}>
+        <h2 className={"text-5xl  md:text-3xl font-bold text-secondary "}>
+          Call For Speakers
         </h2>
-        <p className={"text-gray-900 my-6 text-justify max-w-[500px]"}>
+
+        <p className={"text-justify lg:max-w-[500px] text-secondary"}>
           We're looking for speakers to share their expertise with our
           enthusiastic audience. If you have a topic you'd like to present, we'd
           love to hear from you. Submit your proposal today!
         </p>
-        <a href="https://www.papercall.io/gophercon-africa" target={"_blank"} className={"section-button"}>Submit a Proposal</a>
+
+        <a href="https://www.papercall.io/gophercon-africa" target={"_blank"} className="section-button w-fit mx-auto">Submit a Proposal</a>
       </div>
     </section>
   );
