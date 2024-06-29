@@ -8,31 +8,11 @@ import nairobiGophers from '../assets/nairobi-gophers.png';
 import menu from '../assets/menu.png';
 import close from '../assets/close.png';
 import * as Dialog from '@radix-ui/react-dialog';
-
-import { useEffect, useState } from "react";
 import GopherconForAll from "../components/GopherconForAll.tsx";
-// import { HashLink } from 'react-router-hash-link';
+
 const Home = () => {
-  const [isVisible, setIsVisible] = useState<boolean>(true)
-
-  const toggleVisibility = () => {
-    if (window.scrollY > 0) {
-      setIsVisible(false);
-    } else {
-      setIsVisible(true);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', toggleVisibility);
-
-    return () => {
-      window.removeEventListener('scroll', toggleVisibility);
-    };
-  }, []);
-
   function scroll(to: string) {
-    const element = document.getElementById(to);
+    const element = document.getElementById(to) as HTMLElement;
     element.scrollIntoView({ block: "start" });
   }
 
