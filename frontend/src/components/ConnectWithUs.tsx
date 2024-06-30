@@ -1,39 +1,43 @@
 import meetupLogo from "../assets/meetupLogo.png";
 import xLogo from "../assets/xLogo.png";
 
-export  default  function ConnectWithUs() {
+export default function ConnectWithUs() {
   return (
-    <section className={"my-12 text-center max-w-[1440px] mx-auto px-4"}>
-      <div>
-        <h2 className={"text-4xl  md:text-4xl font-bold text-secondary mb-2"}>
-          Updates and Network
+    <section className={"container mx-auto bg-accent lg:h-[50vh] text-secondary flex flex-col justify-center text-center p-6"} id='contact'>
+      <div className="lg:w-[700px] px-6 mx-auto">
+        <h2 className={"text-5xl  md:text-3xl font-bold text-secondary mb-3"}>
+          Connect With Us
         </h2>
-        <hr className={"bg-primary w-[80px] h-2 m-auto mb-2"} />
         <p
           className={
-            "text-gray-500 mb-5 text-center max-w-[500px] m-auto"
+            "text-center mb-6 text-sm"
           }
         >
           Stay in the loop. Engage with us on social media to get the latest
-          events
+          events. You can also reach out to us via email at <b>hello@gophers.africa</b>
         </p>
       </div>
 
-      <div className={"flex flex-row h-50px items-center justify-center"}>
-        <a href={"https://www.meetup.com/Nairobi-Gophers/"}>
+
+      <div className={"flex flex-col items-center lg:items-start lg:flex-row lg:justify-center gap-3 "}>
+        <a href={"https://www.meetup.com/Nairobi-Gophers/"} className="bg-white p-3 rounded-lg w-48 flex flex-col items-center gap-3">
+
           <img
             src={meetupLogo}
             alt={"meetup logo"}
-            className={"object-cover w-16"}
+            className={"object-cover  h-12"}
           />
+          <p className="text-sm text-secondary font-bold h-full">Meetup</p>
         </a>
 
-        <a href={"https://twitter.com/nairobi_gophers"}>
+        <a href={"https://twitter.com/nairobi_gophers"} className="bg-white p-3 rounded-lg w-48 flex flex-col items-center gap-3">
           <img
             src={xLogo}
             alt={"twitter logo"}
-            className={"object-cover w-16"}
+            className={"object-cover h-12"}
           />
+
+          <p className="text-sm text-secondary font-bold h-full ">X</p>
         </a>
       </div>
     </section>

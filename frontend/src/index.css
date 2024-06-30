@@ -15,7 +15,7 @@ html {
     }
 
 
-    .section-button {
-        @apply bg-primary text-white px-10 py-5 rounded-full font-bold capitalize
+    .button {
+        @apply bg-primary text-white min-w-48 py-4 rounded-full capitalize text-sm  text-center font-semibold
     }
 }

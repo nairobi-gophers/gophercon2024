@@ -2,114 +2,115 @@ import Sponsors from "../components/Sponsors.tsx";
 import CallForSpeakers from "../components/CallForSpeakers.tsx";
 import ConnectWithUs from "../components/ConnectWithUs.tsx";
 import { Footer } from "../components/Footer.tsx";
-import Logo from "../assets/nairobi-gophers.png";
 import Ticket from "../components/Ticket.tsx";
-import {useEffect, useState} from "react";
+import world from '../assets/world.svg';
+import nairobiGophers from '../assets/nairobi-gophers.png';
+import menu from '../assets/menu.png';
+import close from '../assets/close.png';
+import * as Dialog from '@radix-ui/react-dialog';
+import GopherconForAll from "../components/GopherconForAll.tsx";
 
 const Home = () => {
-  const [isVisible, setIsVisible] = useState<boolean>(true)
-
-  const toggleVisibility = () => {
-    if (window.scrollY > 0) {
-      setIsVisible(false);
-    } else {
-      setIsVisible(true);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', toggleVisibility);
-
-    return () => {
-      window.removeEventListener('scroll', toggleVisibility);
-    };
-  }, []);
+  function scroll(to: string) {
+    const element = document.getElementById(to) as HTMLElement;
+    element.scrollIntoView({ block: "start" });
+  }
 
   return (
-    <>
-      <div
-        className={
-          "relative min-h-screen text-center flex flex-col items-center !w-[100vw]"
-        }
-      >
-        <div className={"mt-12 md:mt-20"}>
-          <div className="my-4 text-center leading-8 md:leading-10">
-            <h1 className={"text-3xl md:text-5xl font-bold text-gray-600"}>
-              GOPHERCON AFRICA
-            </h1>
-            <p className="text-4xl md:text-7xl tracking-wide text-secondary font-bold md:my-4">
-              NAIROBI
-            </p>
-            <p className="italic text-2xl md:text-4xl font-semibold text-gray-900 text-shadow-lg animate-pulse shadow-primary">
-              OCT 18-19
-            </p>
-          </div>
-          <div className="flex justify-center items-center p-1 md:p-4">
-            <img
-              src={Logo}
-              alt={"go lang logo"}
-              className="w-[50%] md:w-[40%] lg:w-[20%]"
-            />
-          </div>
-          <p
-            className={
-              "max-w-[800px] px-4 md:text-xl my-2 m-auto text-gray-700 mb-2"
-            }
-          >
-            We are proud to announce the 1st Gophercon conference in Africa, to
-            highlight the continent's premier Go programming talent, experts,
-            and enthusiasts. And we invites both local and international
-            participants. Centered on the Go programming language and related
-            subjects, let's join forces and turn this into an unforgettable Go
-            event by grabbing your ticket or coming on board as a sponsor.
-          </p>
-          <p className="font-semibold">
-            Venue:
-            <span className="font-normal"> Daystar University(tentative)</span>
-          </p>
-          <div className="flex md:space-x-8 flex-col mt-4 md:mt-8 md:flex-row items-center justify-center md:justify-center">
-            <a
-              href="#tickets"
-              className={
-                "px-6 py-4 mt-4 mb-2 md:mb-0 md:mt-16 rounded-full bg-primary cursor-pointer text-white font-bold md:text-lg"
-              }
-            >
-              Buy Your Ticket
-            </a>
-            <a href='#cfs'
-              className={
-                "px-6 py-4 mt-4 md:mt-16 rounded-full bg-primary cursor-pointer text-white font-bold md:text-lg"
-              }
-            >
-              Call for speakers
-            </a>
+    <div className="text-sm id" id='home'>
+      <div className="h-[100vh] w-full relative">
+        <nav className="relative flex flex-row p-3 border-b lg:hidden items-center">
+          <div className="w-1/3">
+            <Dialog.Root >
+              <Dialog.Trigger >
+                <img src={menu} alt='menu' className="w-8 h-8" />
+              </Dialog.Trigger>
+              <Dialog.Portal>
+                <Dialog.Overlay className='bg-gray-800 data-[state=open]:animate-overlayShow fixed inset-0' />
+                <Dialog.Content className="fixed top-[50%] left-[50%] w-[100vw]  translate-x-[-50%] translate-y-[-50%] bg-white h-[100vh] px-6 pt-3">
+                  <Dialog.Title className="sr-only">
+                    Navigation
+                  </Dialog.Title>
+
+                  <Dialog.Description className="sr-only">
+                    Navigation
+                  </Dialog.Description>
+
+                  <div className="flex flex-row items-center justify-center gap-3 relative">
+                    <img src={nairobiGophers} className=" w-12 h-12 object-center object-cover mb-3" />
+                    <Dialog.Close className="absolute right-3 top-2">
+                      <img src={close} className=" w-6 h-6 object-center object-cover" />
+                    </Dialog.Close>
+                  </div>
+                  <div className="flex flex-col text-secondary *:text-left items-center text-center">
+                    <Dialog.Close className="border-b-2 border-secondary w-fit p-3" onClick={() => scroll('home')}>
+                      Home
+                    </Dialog.Close>
+                    <Dialog.Close className="border-b-2 border-white w-fit p-3" onClick={() => scroll('speakers')}>
+                      Speakers
+                    </Dialog.Close>
+                    <Dialog.Close className="border-b-2 border-white w-fit p-3" onClick={() => scroll('tickets')}>
+                      Tickets
+                    </Dialog.Close>
+                    <Dialog.Close className="border-b-2 border-white w-fit p-3" onClick={() => scroll('sponsors')}>
+                      Sponsors
+                    </Dialog.Close>
+                    <Dialog.Close className="border-b-2 border-white w-fit p-3" onClick={() => scroll('contact')}>
+                      Contact
+                    </Dialog.Close>
+                  </div>
+
+                </Dialog.Content>
+              </Dialog.Portal>
+            </Dialog.Root>
+
           </div>
 
-          {isVisible && <div className="fixed inset-x-0 pb-4 flex w-full bottom-0 justify-center items-center cursor-pointer">
-            <a href="#cfs">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                className="w-16 text-gray-600 stroke-1 stroke-cyan-500 fill-primary animate-bounce"
-              >
-                <g data-name="Layer 2">
-                  <g data-name="arrow-ios-downward">
-                    <rect width="12" height="12" opacity="0" />
-                    <path d="M12 16a1 1 0 0 1-.64-.23l-6-5a1 1 0 1 1 1.28-1.54L12 13.71l5.36-4.32a1 1 0 0 1 1.41.15 1 1 0 0 1-.14 1.46l-6 4.83A1 1 0 0 1 12 16z" />
-                  </g>
-                </g>
-              </svg>
-            </a>
-          </div>}
+          <div className="w-1/3 flex flex-row items-center justify-center gap-3">
+            <img src={nairobiGophers} className=" w-12 h-12 object-center object-cover" />
+          </div>
+
+          <div className="w-1/3"></div>
+        </nav>
+        <nav className="hidden lg:flex absolute top-0 p-3 w-fit mx-auto text-center left-0 right-0 text-secondary flex-row gap-3 text-sm items-center bg-white">
+          <button className=" mr-4" onClick={() => scroll('home')}>
+            <img src={nairobiGophers} className=" w-20 h-20 object-center object-cover" />
+          </button>
+          <button className="border-b-2 border-secondary p-3" onClick={() => scroll('home')}>Home</button>
+
+          <button className="border-b-2 border-white p-3" onClick={() => scroll('speakers')}>Speakers</button>
+          <button className="border-b-2 border-white p-3" onClick={() => scroll('tickets')}> Tickets</button>
+          <button className="border-b-2 border-white p-3" onClick={() => scroll('sponsors')}>Sponsors</button>
+          <button className="border-b-2 border-white p-3" onClick={() => scroll('contact')}>Contact</button>
+        </nav>
+
+        <img src={world} alt='world' className="lg:w-full h-full object-cover" />
+
+        <div className="absolute top-16 lg:top-0 lg:bottom-0 my-auto p-6 lg:p-3 lg:w-[750px] mx-auto text-center left-0 right-0 h-fit flex flex-col gap-6">
+          <h1 className="text-5xl lg:text-7xl font-bold text-primary">Gophercon Africa</h1>
+          <p className="lg:w-[600px]  text-pretty mx-auto">
+            Africa's first Gophercon arrives! Join local & international Go enthusiasts, experts, and rising stars for an unforgettable celebration of the Go programming language. Grab your ticket or become a sponsor - let's make history together!
+          </p>
+
+          <div className="w-fit p-8 mx-auto border border-secondary rounded-md bg-white">
+            <p><b>Date:</b> 19-20th October 2024</p>
+            <p><b>City:</b> Nairobi, Kenya</p>
+            <p><b>Venue:</b> To be announced</p>
+          </div>
+
+          <button className="px-8 py-3 text-white bg-primary  w-fit mx-auto rounded shadow font-semibold"
+            onClick={() => scroll('tickets')}
+          >Get Tickets</button>
         </div>
       </div>
 
       <CallForSpeakers />
       <Ticket />
+      <GopherconForAll />
       <Sponsors />
       <ConnectWithUs />
       <Footer />
-    </>
+    </div>
   );
 };
 

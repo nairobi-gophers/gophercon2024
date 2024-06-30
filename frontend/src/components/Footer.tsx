@@ -1,6 +1,6 @@
 export function Footer() {
   return (
-    <footer className={"bg-secondary space-y-3 py-6 text-white text-center"}>
+    <footer className={"bg-secondary space-y-3 py-6 text-white text-center mt-6"}>
       <p className={"text-white text-sm"}>
         &copy; 2024 Nairobi Gophers. All rights reserved.
       </p>
