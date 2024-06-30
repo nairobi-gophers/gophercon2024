@@ -3,7 +3,19 @@ info:
   title: Gophercon-Africa-24
   version: 1.0.0
   description: This is an OpenAPI Specification Document  for Gophercon-KE-24
-  contact :
+  contact:
+    name: API Support
+    url: https://github.com/nairobi-gophers/gophercon2024/issues
+  license:
+    name: MIT
+    url: https://github.com/nairobi-gophers/gophercon2024/blob/main/LICENSE
+tags:
+  - name: Users
+    description: All operations related to individuals interacting with the system.
+  - name: Tickets
+    description: All operations handling ticket acquisition.
+  - name: Payments
+    description: All operations regarding financial transactions.
 paths:
   /users/register:
     post:
@@ -80,8 +92,8 @@ paths:
           in: path
           required: true
           schema:
-            type: integer
-            format: int64
+            type: string
+            format: uuid
       responses:
         '200':
           description: Successful operation
@@ -244,7 +256,8 @@ components:
         type: object
         properties:
           userId:
-            type: integer
+            type: string
+            format: uuid
           token:
             type: string
           tokenType:
@@ -266,7 +279,8 @@ components:
         type: object
         properties:
           userId:
-            type: integer
+            type: string
+            format: uuid
           token:
             type: string
           tokenType:
@@ -277,7 +291,8 @@ components:
       type: object
       properties:
         id:
-          type: integer
+          type: string
+          format: uuid
         firstName:
           type: string
         lastName:
@@ -298,7 +313,8 @@ components:
       type: object
       properties:
         id:
-          type: integer
+          type: string
+          format: uuid
         eventName:
           type: string
         quantity:
@@ -319,7 +335,8 @@ components:
       type: object
       properties:
         userId:
-          type: integer
+          type: string
+          format: uuid
         eventName:
           type: string
         quantity:
