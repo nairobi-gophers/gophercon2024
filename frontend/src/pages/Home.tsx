@@ -93,7 +93,7 @@ const Home = () => {
           </p>
 
           <div className="w-fit p-8 mx-auto border border-secondary rounded-md bg-white">
-            <p><b>Date:</b> 19-20th October 2024</p>
+            <p><b>Date:</b> 18 - 19th October 2024</p>
             <p><b>City:</b> Nairobi, Kenya</p>
             <p><b>Venue:</b> To be announced</p>
           </div>
