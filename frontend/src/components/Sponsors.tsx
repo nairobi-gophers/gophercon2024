@@ -1,20 +1,28 @@
+// src/Sponsors.tsx
+
 export default function Sponsors() {
   return (
     <section
       id="sponsors"
-      className={
-        "container mx-auto px-6 h-[50vh] flex flex-col justify-center text-secondary lg:w-[700px]"
-      }
+      className="container mx-auto px-6 py-12 md:py-24 flex flex-col items-center text-center text-secondary"
     >
-      <div className="w-fit mx-auto text-center">
-        <h2 className="text-5xl  md:text-3xl font-bold text-secondary mb-3">Sponsor The Event</h2>
-        <p className="mb-6 text-justify text-sm"> Don't miss this chance to supercharge your brand and tap into the
-          vibrant energy of Nairobi's Go programming community. Contact us today
-          to explore sponsorship opportunities and join us in creating an
-          unforgettable event.</p>
-      </div>
+      <h2 className="text-3xl md:text-5xl font-bold mb-6">
+        Sponsor The Event
+      </h2>
+      <p className="max-w-lg mb-8 text-sm md:text-base">
+          Don't miss this chance to supercharge your brand and tap into the vibrant energy of Nairobi's Go programming community. Contact us today to explore more sponsorship opportunities and join us in creating an unforgettable event.</p>
 
-      <a className="button w-fit mx-auto" href={"mailto:hello@gophers.africa"}>Sponsor The Event</a>
+      <div className="flex flex-col md:flex-row gap-4">
+        <a
+          className="button w-full md:w-auto mb-4 md:mb-0"
+          href="/sponsorship"
+        >
+          Sponsorship Details
+        </a>
+        <a className="button w-full md:w-auto" href="mailto:hello@gophers.africa?subject=Sponsor%20Us">
+          Become a Sponsor
+        </a>
+      </div>
     </section>
   );
 }
