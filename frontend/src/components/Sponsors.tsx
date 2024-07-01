@@ -1,6 +1,11 @@
 // src/Sponsors.tsx
-
 export default function Sponsors() {
+  const handleLinkClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+
+    window.open('/Gophercon Africa 2024 Sponsorship Prospectus.pdf', '_blank');
+
+  };
   return (
     <section
       id="sponsors"
@@ -15,11 +20,11 @@ export default function Sponsors() {
       <div className="flex flex-col md:flex-row gap-4">
         <a
           className="button w-full md:w-auto mb-4 md:mb-0"
-          href="/sponsorship"
+          onClick={handleLinkClick}
         >
           Sponsorship Details
         </a>
-        <a className="button w-full md:w-auto" href="mailto:hello@gophers.africa?subject=Sponsor%20Us">
+        <a className="button w-full md:w-auto" href="mailto:hello@gophers.africa?subject=GopherCon%20Africa%20Sponsorship">
           Become a Sponsor
         </a>
       </div>
