@@ -1,10 +1,6 @@
 import React from 'react';
 
 export default function Sponsors() {
-  const handleButtonClick = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-    event.preventDefault(); // Prevents the default behavior of the anchor tag (navigation)
-
-  };
 
   return (
     <section
@@ -22,7 +18,6 @@ export default function Sponsors() {
         <a
           className="button w-full md:w-auto mb-4 md:mb-0"
           href="/sponsorship"
-          onClick={handleButtonClick} // Call the function to handle button click
         >
           Sponsorship Details
         </a>
