@@ -25,8 +25,6 @@ export default function Sponsors() {
         <a
           className="button w-full md:w-auto"
           href="mailto:hello@gophers.africa?subject=GopherCon%20Africa%20Sponsorship"
-          target="_blank"
-          rel="noopener noreferrer"
         >
           Become a Sponsor
         </a>
