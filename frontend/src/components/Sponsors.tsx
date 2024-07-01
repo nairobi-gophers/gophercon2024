@@ -1,6 +1,6 @@
+// src/Sponsors.tsx
 
 export default function Sponsors() {
-
   return (
     <section
       id="sponsors"
@@ -10,19 +10,23 @@ export default function Sponsors() {
         Sponsor The Event
       </h2>
       <p className="max-w-lg mb-8 text-sm md:text-base">
-        Don't miss this chance to supercharge your brand and tap into the vibrant energy of Nairobi's Go programming community. Contact us today to explore more sponsorship opportunities and join us in creating an unforgettable event.
+        Don't miss this chance to supercharge your brand and tap into the vibrant energy of Nairobi's Go programming community. Connect with over 100 senior Go developers and contact us today to explore more sponsorship opportunities. Join us in creating an unforgettable event!
       </p>
 
       <div className="flex flex-col md:flex-row gap-4">
         <a
           className="button w-full md:w-auto mb-4 md:mb-0"
           href="/sponsorship"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Sponsorship Details
         </a>
         <a
           className="button w-full md:w-auto"
           href="mailto:hello@gophers.africa?subject=GopherCon%20Africa%20Sponsorship"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Become a Sponsor
         </a>
