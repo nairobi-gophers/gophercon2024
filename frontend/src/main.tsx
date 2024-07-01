@@ -4,6 +4,7 @@ import './index.css'
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import Home from "./pages/Home.tsx";
 import Error from "./pages/Error.tsx";
+import SponsorshipRedirect from './pages/SponsorshipRedirect'; 
 
 
 const router = createBrowserRouter([
@@ -11,6 +12,10 @@ const router = createBrowserRouter([
     path: "/",
     element: <Home />,
     errorElement: <Error />,
+  },
+  {
+    path: "/sponsorship",
+    element: <SponsorshipRedirect />, 
   },
 ]);
 
