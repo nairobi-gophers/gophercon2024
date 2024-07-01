@@ -33,7 +33,7 @@ const Ticket = () => {
       <div className="flex flex-col lg:flex-row gap-6 justify-center">
         <SponsorCard
           title="Student Ticket"
-          price="1500 KSH"
+          price="1000 KSH"
           body='In a bid to encourage students we have a package specific for you.'
           link='https://appslab-qcpjjn.shop.chpter.co/product/481cc1c2-9793-4d97-9432-f04521537be8'
           isPopular={false}
