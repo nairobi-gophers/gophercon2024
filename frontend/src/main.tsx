@@ -9,6 +9,7 @@ import Sponsors from './components/Sponsors.tsx';
 import Sponsorship from './pages/Sponsorship.tsx';
 import SpeakersList from './pages/SpeakersList.tsx';
 import TicketList from './pages/TicketsList.tsx';
+import SocialsList from './pages/SocialsList.tsx';
 
 
 const router = createBrowserRouter([
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
   {
     path: "/tickets",
     element: <TicketList />,
+  },
+  {
+    path: "/connect",
+    element: <SocialsList />,
   }
 ]);
 
