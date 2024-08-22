@@ -8,20 +8,13 @@ const PartnaSponsor: React.FC = () => {
       <div className="flex items-center space-x-4">
         <img
           src={partna}
-          alt="API toolkit"
-          className="h-14"
+          alt="Partna"
+          className="h-16"
         />
         <div>
           <h3 className="text-xl font-bold text-gray-900 text-left mb-8">Partna</h3>
           <p className="text-left text-gray-600 text-sm">
-            Partna builds the digital finance tools, and infrastructure that make it simple for global businesses to easily access African markets and for African entrepreneurs to flourish globally
-
-            Modern companies use Partna's API and B2B payment tools to smoothly launch and operate in Africa
-            With one Partna account, you get all the payment tools you need to grow your business
-            payments api illustration
-            Payments API
-
-            Collect and payout local currencies. Onramp and Offramp your users. All with one easy integration
+          Partna simplifies global business access to African markets and empowers African entrepreneurs through digital finance tools and infrastructure. Companies use Partna's API and B2B payment tools to efficiently launch and operate in Africa. With one Partna account, businesses can access all necessary payment tools. The Payments API allows for seamless collection and payout of local currencies, enabling easy onramping and offraming of users through a single integration.
 
           </p>
           <div className="flex flex-wrap gap-4 mt-4 justify-center">

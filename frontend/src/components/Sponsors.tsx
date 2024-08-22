@@ -1,5 +1,6 @@
 import Navbar from "./Navbar";
 import PlatinumSponsors from "./sponsors/APItoolkitSponsors";
+import GoogleSponsor from "./sponsors/GoogleSponsor";
 import PartnaSponsor from "./sponsors/PartnaSponsors";
 
 export default function Sponsors() {
@@ -39,6 +40,9 @@ export default function Sponsors() {
           </div>
         </div>
       </div>
+      <div className="mt-20">
+      </div>
+      <GoogleSponsor/>
       <PlatinumSponsors />
       <div className="mt-20">
       </div>
