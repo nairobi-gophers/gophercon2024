@@ -27,7 +27,6 @@ const Navbar: React.FC = () => {
                                 <Dialog.Description className="sr-only">Navigation</Dialog.Description>
 
                                 <div className="flex flex-row items-center justify-center gap-3 relative">
-                                    <img src={nairobiGophers} className=" w-12 h-12 object-center object-cover mb-3" />
                                     <Dialog.Close className="absolute right-3 top-2">
                                         <img src={close} className=" w-6 h-6 object-center object-cover" />
                                     </Dialog.Close>
