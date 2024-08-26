@@ -5,17 +5,16 @@ import partna from "../../assets/wordmark_primary.svg";
 const PartnaSponsor: React.FC = () => {
   return (
     <div className="border-2 rounded-lg border-black p-4 mt-4 relative">
-      <div className="flex items-center space-x-4">
+      <div className="flex flex-wrap">  {/* Use flex-wrap for wrapping on mobile */}
         <img
           src={partna}
           alt="Partna"
-          className="h-16"
+          className="max-w-full"  
         />
-        <div>
+        <div className="flex flex-col">  {/* Stack content vertically on mobile */}
           <h3 className="text-xl font-bold text-gray-900 text-left mb-8">Partna</h3>
           <p className="text-left text-gray-600 text-sm">
-          Partna simplifies global business access to African markets and empowers African entrepreneurs through digital finance tools and infrastructure. Companies use Partna's API and B2B payment tools to efficiently launch and operate in Africa. With one Partna account, businesses can access all necessary payment tools. The Payments API allows for seamless collection and payout of local currencies, enabling easy onramping and offraming of users through a single integration.
-
+            Partna simplifies global business access to African markets and empowers African entrepreneurs through digital finance tools and infrastructure. Companies use Partna's API and B2B payment tools to efficiently launch and operate in Africa. With one Partna account, businesses can access all necessary payment tools. The Payments API allows for seamless collection and payout of local currencies, enabling easy onramping and offramping of users through a single integration.
           </p>
           <div className="flex flex-wrap gap-4 mt-4 justify-center">
             <a href="https://getpartna.com" className="text-blue-500 hover:underline flex items-center space-x-2">
