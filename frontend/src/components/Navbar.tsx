@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import * as Dialog from '@radix-ui/react-dialog';
-import nairobiGophers from '../assets/nairobi-gophers.png';
+import nairobiGophers from '../assets/Africa Gopher option 2.png';
 import menu from '../assets/menu.png';
 import close from '../assets/close.png';
 
@@ -14,8 +14,8 @@ const Navbar: React.FC = () => {
     return (
         <>
             {/* Mobile Navigation */}
-            <nav className="relative flex flex-row p-3 border-b lg:hidden items-center">
-                <div className="w-1/3">
+            <nav className="relative flex flex-col p-3 border-b lg:hidden items-center">
+                <div className="w-full flex justify-between items-center">
                     <Dialog.Root>
                         <Dialog.Trigger>
                             <img src={menu} alt='menu' className="w-8 h-8" />
@@ -73,12 +73,6 @@ const Navbar: React.FC = () => {
                         </Dialog.Portal>
                     </Dialog.Root>
                 </div>
-
-                <div className="w-1/3 flex flex-row items-center justify-center gap-3">
-                    <img src={nairobiGophers} className=" w-12 h-12 object-center object-cover" />
-                </div>
-
-                <div className="w-1/3"></div>
             </nav>
 
             {/* Desktop Navigation */}

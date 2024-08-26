@@ -1,4 +1,4 @@
-import PlatinumSponsors from "./sponsors/APItoolkitSponsors";
+import APItoolkitSponsor from "./sponsors/APItoolkitSponsors";
 import GoogleSponsor from "./sponsors/GoogleSponsor";
 import PartnaSponsor from "./sponsors/PartnaSponsors";
 
@@ -41,7 +41,7 @@ export default function Sponsors() {
       <div className="mt-20">
       </div>
       <GoogleSponsor/>
-      <PlatinumSponsors />
+      <APItoolkitSponsor/>
       <PartnaSponsor/>
 
 
