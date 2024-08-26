@@ -1,4 +1,3 @@
-import Navbar from "./Navbar";
 import SpeakersList from "./SpeakersLists";
 
 export default function Speakers() {
@@ -7,7 +6,6 @@ export default function Speakers() {
             id="sponsors"
             className="container mx-auto px-6 py-12 md:py-24 flex flex-col items-center text-center text-secondary mt-20"
         >
-            <Navbar />
             <h2 className="text-3xl md:text-5xl font-bold mt-8 mb-6">
                 Our Event Speakers
             </h2>
