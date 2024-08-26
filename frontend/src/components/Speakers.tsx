@@ -1,4 +1,5 @@
 import Navbar from "./Navbar";
+import SpeakersList from "./SpeakersLists";
 
 export default function Speakers() {
     return (
@@ -22,7 +23,7 @@ export default function Speakers() {
                 </div>
             </div>
 
-
+            <SpeakersList />
         </section>
     );
 }
