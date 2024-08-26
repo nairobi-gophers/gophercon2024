@@ -1,4 +1,3 @@
-import Navbar from "./Navbar";
 import PlatinumSponsors from "./sponsors/APItoolkitSponsors";
 import GoogleSponsor from "./sponsors/GoogleSponsor";
 import PartnaSponsor from "./sponsors/PartnaSponsors";
@@ -9,7 +8,6 @@ export default function Sponsors() {
       id="sponsors"
       className="container mx-auto px-6 py-12 md:py-24 flex flex-col items-center text-center text-secondary mt-20"
     >
-      <Navbar />
       <h2 className="text-3xl md:text-5xl font-bold mt-8 mb-6">
         Our Event Sponsors
       </h2>
@@ -44,8 +42,6 @@ export default function Sponsors() {
       </div>
       <GoogleSponsor/>
       <PlatinumSponsors />
-      <div className="mt-20">
-      </div>
       <PartnaSponsor/>
 
 
