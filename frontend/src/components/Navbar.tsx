@@ -82,9 +82,9 @@ const Navbar: React.FC = () => {
 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex absolute top-0 p-3 w-fit mx-auto text-center left-0 right-0 text-secondary flex-row gap-3 text-sm items-center bg-white">
-                <button className="mr-4" onClick={() => scroll('home')}>
-                    <img src={nairobiGophers} className="w-20 h-20 object-center object-cover" />
-                </button>
+                <div className="mr-4 flex justify-center items-center" onClick={() => scroll('home')}>
+                    <img src={nairobiGophers} className="h-20 object-center object-cover" />
+                </div>
                 <NavLink
                     to="/"
                     className={({ isActive }) => `border-b-2 p-3 ${isActive ? 'border-secondary' : 'border-white'}`}
