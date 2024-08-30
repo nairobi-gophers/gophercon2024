@@ -32,12 +32,12 @@ export default function TravelInfoIntro() {
           so please take a moment to review the details below. Safe travels,
           and we look forward to welcoming you to an unforgettable event!
         </p>
-        <Link
+        <a
           className="button w-fit mx-auto lg:mx-0"
-          to="/travel-info"
+          href="/travel-info"
         >
           View More
-        </Link>
+        </a>
       </div>
     </section>
   );
