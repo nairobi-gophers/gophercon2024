@@ -7,6 +7,7 @@ import world from '../assets/world.svg';
 import GopherconForAll from "../components/GopherconForAll.tsx";
 import Navbar from "../components/Navbar.tsx";
 import { HomeBanner } from "../components/HomeBanner.tsx";
+import TravelInfoIntro from "../components/TravelInfoIntro.tsx";
 
 const Home = () => {
   function scroll(to: string) {
@@ -32,6 +33,7 @@ const Home = () => {
       <Ticket />
       <GopherconForAll />
       <Sponsors />
+      <TravelInfoIntro />
       <ConnectWithUs />
       <Footer />
     </div>

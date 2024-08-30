@@ -68,6 +68,12 @@ const Navbar: React.FC = () => {
                                     >
                                         Contact
                                     </NavLink>
+                                     <NavLink
+                                        to="/travel-info"
+                                        className={({ isActive }) => `border-b-2 p-3 ${isActive ? 'border-secondary' : 'border-white'}`}
+                                    >
+                                        Travel Info
+                                    </NavLink>
                                 </div>
                             </Dialog.Content>
                         </Dialog.Portal>
@@ -109,6 +115,12 @@ const Navbar: React.FC = () => {
                     className={({ isActive }) => `border-b-2 p-3 ${isActive ? 'border-secondary' : 'border-white'}`}
                 >
                     Social
+                </NavLink>
+                <NavLink
+                    to="/travel-info"
+                    className={({ isActive }) => `border-b-2 p-3 ${isActive ? 'border-secondary' : 'border-white'}`}
+                >
+                    Travel Info
                 </NavLink>
             </nav>
         </>
