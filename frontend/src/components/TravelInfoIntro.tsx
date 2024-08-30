@@ -1,4 +1,3 @@
-import {Link} from "react-router-dom";
 import nairobiImage from "../assets/nairobi.jpg";
 
 export default function TravelInfoIntro() {
