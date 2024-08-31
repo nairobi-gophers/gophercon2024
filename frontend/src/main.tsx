@@ -10,6 +10,7 @@ import Sponsorship from './pages/Sponsorship.tsx';
 import SpeakersList from './pages/SpeakersList.tsx';
 import TicketList from './pages/TicketsList.tsx';
 import SocialsList from './pages/SocialsList.tsx';
+import TravelInfo from "./pages/TravelInfo.tsx";
 
 
 const router = createBrowserRouter([
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
   {
     path: "/connect",
     element: <SocialsList />,
+  },
+   {
+    path: "/travel-info",
+    element: <TravelInfo />,
   }
 ]);
 
