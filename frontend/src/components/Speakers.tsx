@@ -1,5 +1,3 @@
-import SpeakersList from "./SpeakersLists";
-
 export default function Speakers() {
     return (
         <section
