@@ -21,7 +21,7 @@ export default function Speakers() {
                 </div>
             </div>
 
-            <SpeakersList />
+            {/*<SpeakersList />*/}
         </section>
     );
 }
