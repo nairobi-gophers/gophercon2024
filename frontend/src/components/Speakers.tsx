@@ -1,5 +1,3 @@
-import SpeakersList from "./SpeakersLists";
-
 export default function Speakers() {
     return (
         <section
@@ -21,7 +19,7 @@ export default function Speakers() {
                 </div>
             </div>
 
-            <SpeakersList />
+            {/*<SpeakersList />*/}
         </section>
     );
 }
