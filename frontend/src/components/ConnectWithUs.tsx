@@ -3,7 +3,7 @@ import xLogo from "../assets/xLogo.png";
 
 export default function ConnectWithUs() {
   return (
-    <section className={"container mx-auto bg-accent lg:h-[50vh] text-secondary flex flex-col justify-center text-center p-6"} id='contact'>
+    <section className={"container mx-auto bg-accent py-8 lg:py-16 text-secondary flex flex-col justify-center text-center mt-16"} id='contact'>
       <div className="lg:w-[700px] px-6 mx-auto">
         <h2 className={"text-5xl  md:text-3xl font-bold text-secondary mb-3"}>
           Connect With Us

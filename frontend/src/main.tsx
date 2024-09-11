@@ -5,12 +5,12 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home.tsx";
 import Error from "./pages/Error.tsx";
 import SponsorshipRedirect from './pages/SponsorshipRedirect';
-import Sponsors from './components/Sponsors.tsx';
 import Sponsorship from './pages/Sponsorship.tsx';
 import SpeakersList from './pages/SpeakersList.tsx';
 import TicketList from './pages/TicketsList.tsx';
 import SocialsList from './pages/SocialsList.tsx';
 import TravelInfo from "./pages/TravelInfo.tsx";
+import Agenda from "./pages/Agenda.tsx";
 
 
 const router = createBrowserRouter([
@@ -24,12 +24,12 @@ const router = createBrowserRouter([
     element: <SponsorshipRedirect />,
   },
   {
-    path: "/sponsors",
-    element: <Sponsorship />,
+    path: "/agenda",
+    element: <Agenda />,
   },
   {
     path: "/sponsors",
-    element: <Sponsors />,
+    element: <Sponsorship />,
   },
   {
     path: "/speakers",
