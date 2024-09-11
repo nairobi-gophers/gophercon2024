@@ -31,13 +31,30 @@ const Sessions = () => {
                   </ul>
               </div>
               <div className="my-8">
-                  {
-                      activeSessions.map(session => {
-                          return (
-                              <SessionCard session={session} />
-                          )
-                      })
-                  }
+                  {(activeDay == 'all' || activeDay == '18th') && <div className="mt-8">
+                      <p className="text-left text-lg font-semibold">Fri Oct 18</p>
+                      {
+                          activeSessions.map(session => {
+                              if (session.day == '18th'){
+                                  return (
+                                      <SessionCard session={session}/>
+                                  )
+                              }
+                          })
+                      }
+                  </div>}
+                  {(activeDay == 'all' || activeDay == '19th') && <div className="mt-8">
+                      <p className="text-left text-lg font-semibold">Fri Oct 19</p>
+                      {
+                          activeSessions.map(session => {
+                              if (session.day == '19th'){
+                                  return (
+                                      <SessionCard session={session}/>
+                                  )
+                              }
+                          })
+                      }
+                  </div>}
               </div>
           </div>
       </section>
