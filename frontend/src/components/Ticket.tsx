@@ -29,7 +29,7 @@ const Ticket = () => {
         <p className="text-xl font-semibold">Get your tickets today!</p>
       </div>
 
-      <div className="flex flex-col lg:flex-row gap-6 justify-center">
+      <div className="mx-4 flex flex-col lg:flex-row gap-6 justify-center">
         <SponsorCard
           title="Student Ticket"
           price="2,000 KSH"
@@ -52,7 +52,7 @@ const Ticket = () => {
           isPopular={false}
         />
       </div>
-      <div className="flex flex-col lg:flex-row gap-6 justify-center">
+      <div className="mx-4 flex flex-col lg:flex-row gap-6 justify-center">
         <SponsorCard
           title="Group of 5"
           price="21,250 KSH"

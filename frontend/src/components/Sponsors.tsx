@@ -8,12 +8,12 @@ export default function Sponsors() {
   return (
     <section
       id="sponsors"
-      className="container mx-auto px-6 py-12 md:py-24 flex flex-col items-center text-center text-secondary"
+      className="container mx-auto py-12 md:py-24 flex flex-col items-center text-center text-secondary"
     >
       <h2 className="text-3xl md:text-5xl font-bold mt-8 mb-6">
         Sponsors
       </h2>
-      <p className="mb-4 w-[60%] text-sm md:text-base">
+      <p className="mb-4 w-full lg:w-[60%] text-sm md:text-base">
         From the seas and mountains to the savannahs of Africa, we invite you to connect with the dynamic Go community in Africa and around the world. Don’t miss this chance to engage with a vibrant and growing network. We welcome your sponsorship and support!
       </p>
 

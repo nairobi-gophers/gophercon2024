@@ -89,7 +89,7 @@ const TravelInfo: React.FC = () => {
         </h2>
 
         <p
-            className={"w-[70%] mx-auto text-secondary text-sm mb-6 text-justify lg:text-center"}>
+            className={"w-full lg:w-[70%] mx-auto text-secondary text-sm mb-6 text-justify lg:text-center"}>
           We're thrilled that you've decided to join us for GopherCon
           Africa
           2024!
