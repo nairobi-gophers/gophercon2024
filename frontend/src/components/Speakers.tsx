@@ -20,19 +20,19 @@ export default function Speakers() {
       {speakers.length > 0 ?
         <>
           <h2 className="text-3xl md:text-5xl font-bold mt-8 mb-6">
-            Our Event Speakers
+            Speakers
           </h2>
           <p className="max-w-lg mb-8 text-sm md:text-base">
             GopherCon Africa features global speakers who deliver cutting-edge content on Go programming and related technologies to keep attendees at the forefront of the field.
           </p>
 
-          <div className="p-6 max-w-lg mx-auto ">
-            <div className="flex items-center justify-between mt-20">
-              <div>
-                <h2 className="text-2xl font-bold text-black">Our Speakers List</h2>
-              </div>
-            </div>
-          </div>
+          {/*<div className="p-6 max-w-lg mx-auto ">*/}
+          {/*  <div className="flex items-center justify-between mt-20">*/}
+          {/*    <div>*/}
+          {/*      <h2 className="text-2xl font-bold text-black">Our Speakers List</h2>*/}
+          {/*    </div>*/}
+          {/*  </div>*/}
+          {/*</div>*/}
 
           <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6 p-4 sm:p-6">
             {speakers.map((speaker, index) => (

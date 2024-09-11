@@ -1,21 +1,23 @@
 import APItoolkitSponsor from "./sponsors/APItoolkitSponsors";
 import GoogleSponsor from "./sponsors/GoogleSponsor";
 import PartnaSponsor from "./sponsors/PartnaSponsors";
+import SponsorshipHeader from "./SponsorshipHeader.tsx";
+import {SponsorBtn} from "./SponsorBtn.tsx";
 
 export default function Sponsors() {
   return (
     <section
       id="sponsors"
-      className="container mx-auto px-6 py-12 md:py-24 flex flex-col items-center text-center text-secondary mt-20"
+      className="container mx-auto px-6 py-12 md:py-24 flex flex-col items-center text-center text-secondary"
     >
       <h2 className="text-3xl md:text-5xl font-bold mt-8 mb-6">
-        Our Event Sponsors
+        Sponsors
       </h2>
-      <p className="max-w-lg mb-8 text-sm md:text-base">
-        Don't miss this chance to supercharge your brand and tap into the vibrant energy of Nairobi's Go programming community. Connect with over 100 senior Go developers and contact us today to explore more sponsorship opportunities. Join us in creating an unforgettable event!
+      <p className="mb-4 w-[60%] text-sm md:text-base">
+        From the seas and mountains to the savannahs of Africa, we invite you to connect with the dynamic Go community in Africa and around the world. Don’t miss this chance to engage with a vibrant and growing network. We welcome your sponsorship and support!
       </p>
 
-      <div className="flex flex-col md:flex-row gap-4 md-6">
+      <div className="flex flex-col md:flex-row gap-4 my-4">
         <a
           className="button w-full md:w-auto mb-4 md:mb-0"
           href="/sponsorship"
@@ -31,20 +33,19 @@ export default function Sponsors() {
           Become a Sponsor
         </a>
       </div>
-      <div className="p-6 max-w-lg mx-auto ">
-        <div className="flex items-center justify-between mt-20">
-          <div>
-            <h2 className="text-2xl font-bold text-black">Our Sponsors</h2>
-          </div>
-        </div>
+      <div className="mt-8">
+        <SponsorshipHeader title='Platinum Sponsor' />
+        <SponsorBtn btnTitle='Become our Platinum Sponsor' />
+        <SponsorshipHeader title='Gold Sponsor'/>
+        <GoogleSponsor/>
+        <SponsorshipHeader title='Silver Sponsor'/>
+        <SponsorBtn btnTitle='Become our Silver Sponsor' />
+        <SponsorshipHeader title='Bronze Sponsor'/>
+        <APItoolkitSponsor/>
+        <PartnaSponsor/>
+        {/*<SponsorshipHeader title='Ticket Sponsor' />*/}
+        {/*<SponsorshipHeader title='Venue Sponsor' />*/}
       </div>
-      <div className="mt-20">
-      </div>
-      <GoogleSponsor/>
-      <APItoolkitSponsor/>
-      <PartnaSponsor/>
-
-
     </section>
   );
 }

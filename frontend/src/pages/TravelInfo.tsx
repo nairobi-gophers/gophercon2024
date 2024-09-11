@@ -82,37 +82,34 @@ const TravelInfo: React.FC = () => {
   return (
     <div className="text-sm id" id='sponsorship'>
       <Navbar/>
-
-
       <div
-        className={"container mx-auto md:w-1/2 p-6 md:text-left flex flex-col lg:mt-[104px]"}>
-            <h2
-              className={"text-5xl  md:text-3xl font-bold text-secondary mb-3 text-center"}>
-              Travel Info
-            </h2>
+          className={"container mx-auto md:w-1/2 p-6 md:text-left flex flex-col lg:mt-[104px]"}>
+        <h2 className="text-3xl md:text-5xl font-bold mb-6 text-center">
+          Travel Info
+        </h2>
 
-            <p
-              className={" lg:max-w-[500px] mx-auto text-secondary text-sm mb-6 text-justify lg:text-center"}>
-              We're thrilled that you've decided to join us for GopherCon
-              Africa
-              2024!
-              In order to make your experience as smooth and enjoyable as
-              possible,
-              we've put together some essential travel information. This guide
-              will
-              cover 2 key areas accommodation and transport. We want to
-              ensure that your trip to Africa is memorable for all the right
-              reasons,
-              so please take a moment to review the details below. Safe
-              travels, and
-              we look forward to welcoming you to an unforgettable event!
-            </p>
-          </div>
+        <p
+            className={"w-[70%] mx-auto text-secondary text-sm mb-6 text-justify lg:text-center"}>
+          We're thrilled that you've decided to join us for GopherCon
+          Africa
+          2024!
+          In order to make your experience as smooth and enjoyable as
+          possible,
+          we've put together some essential travel information. This guide
+          will
+          cover 2 key areas accommodation and transport. We want to
+          ensure that your trip to Africa is memorable for all the right
+          reasons,
+          so please take a moment to review the details below. Safe
+          travels, and
+          we look forward to welcoming you to an unforgettable event!
+        </p>
+      </div>
 
-          <AccommodationInfo />
-          <VisaInfo />
-          <Footer/>
-        </div>
+      <AccommodationInfo/>
+      <VisaInfo/>
+      <Footer/>
+    </div>
     );
 };
 

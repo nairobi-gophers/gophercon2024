@@ -4,7 +4,7 @@ import googleImageUrl from "../../assets/google.png";
 
 const GoogleSponsor: React.FC = () => {
   return (
-    <div className="border-2 rounded-lg border-black p-4 mt-4 relative">
+    <div className="rounded-lg p-4 mt-4 relative">
       <div className="flex flex-col md:flex-row md:items-center md:justify-center">
         <img
           src={googleImageUrl}

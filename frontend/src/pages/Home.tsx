@@ -27,8 +27,6 @@ const Home = () => {
           >Get Tickets</button>
         </div>
       </div>
-
-
       <CallForSpeakers />
       <Ticket />
       <GopherconForAll />
