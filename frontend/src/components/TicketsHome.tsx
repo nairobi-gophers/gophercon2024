@@ -10,7 +10,7 @@ export default function TicketHome() {
         Tickets
       </h2>
       <p className="w-full lg:w-[60%] mb-8 text-sm md:text-base">
-      Buy your tickets to GopherCon Africa 2024 and join hundreds of leading developers from across the Go community for 2 days of talks, networking and socials.      </p>
+        Buy your tickets to GopherCon Africa 2024 and join hundreds of leading developers from across the Go community for 2 days of talks, networking and socials.      </p>
 
       <Ticket />
     </section>

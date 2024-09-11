@@ -2,7 +2,7 @@ import APItoolkitSponsor from "./sponsors/APItoolkitSponsors";
 import GoogleSponsor from "./sponsors/GoogleSponsor";
 import PartnaSponsor from "./sponsors/PartnaSponsors";
 import SponsorshipHeader from "./SponsorshipHeader.tsx";
-import {SponsorBtn} from "./SponsorBtn.tsx";
+import { SponsorBtn } from "./SponsorBtn.tsx";
 
 export default function Sponsors() {
   return (
@@ -36,13 +36,13 @@ export default function Sponsors() {
       <div className="mt-8">
         <SponsorshipHeader title='Platinum Sponsor' />
         <SponsorBtn btnTitle='Become our Platinum Sponsor' />
-        <SponsorshipHeader title='Gold Sponsor'/>
-        <GoogleSponsor/>
-        <SponsorshipHeader title='Silver Sponsor'/>
+        <SponsorshipHeader title='Gold Sponsor' />
+        <GoogleSponsor />
+        <SponsorshipHeader title='Silver Sponsor' />
         <SponsorBtn btnTitle='Become our Silver Sponsor' />
-        <SponsorshipHeader title='Bronze Sponsor'/>
-        <APItoolkitSponsor/>
-        <PartnaSponsor/>
+        <SponsorshipHeader title='Bronze Sponsor' />
+        <APItoolkitSponsor />
+        <PartnaSponsor />
         {/*<SponsorshipHeader title='Ticket Sponsor' />*/}
         {/*<SponsorshipHeader title='Venue Sponsor' />*/}
       </div>
