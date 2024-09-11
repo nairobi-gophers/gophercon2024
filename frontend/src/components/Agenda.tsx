@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import SessionsList from "../utils/sessions.ts";
-import SessionCard, { ISession } from "./SessionCard.tsx";
+import SessionCard, {ISession} from "./SessionCard.tsx";
 
 const Sessions = () => {
     const [activeDay, setActiveDay] = useState<string>('all')
