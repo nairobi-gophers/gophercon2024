@@ -15,7 +15,7 @@ export default function CallForSpeakers() {
       </div>
 
       <div className={"text-center md:w-1/2 p-6 md:text-left flex flex-col lg:justify-center"}>
-        <h2 className={"text-5xl  md:text-3xl font-bold text-secondary mb-3"}>
+        <h2 className={"text-2xl lg:text-5xl  md:text-3xl font-bold text-secondary mb-3"}>
           Call For Speakers
         </h2>
 
@@ -24,7 +24,7 @@ export default function CallForSpeakers() {
           enthusiastic audience. If you have a topic you'd like to present, we'd
           love to hear from you. Submit your proposal today!
         </p>
-        <a className={"text-5xl  md:text-3xl text-secondary mb-3"}>Closed Now</a> 
+        <a className={"text-2xl lg:text-5xl  md:text-3xl text-secondary mb-3"}>Closed Now</a>
 
       </div>
     </section>

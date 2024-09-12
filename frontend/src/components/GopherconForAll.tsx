@@ -7,7 +7,7 @@ export default function GopherconForAll() {
       className="container mx-auto bg-accent flex flex-col lg:flex-row lg:px-6 h-fit  md:h-[50vh]"
     >
       <div className={"text-center md:w-1/2 p-6 md:text-left flex flex-col lg:justify-center md:ml-24 "}>
-        <h2 className={"text-5xl  md:text-3xl font-bold text-secondary mb-3 text-wrap"}>
+        <h2 className={"text-2xl lg:text-5xl  md:text-3xl font-bold text-secondary mb-3 text-wrap"}>
           GopherCon Africa 2024 Ticket Scholarships
         </h2>
 
@@ -16,7 +16,7 @@ export default function GopherconForAll() {
           <p className="mt-4 font-semibold">Apply with the link below</p>
         </div>
 
-        <a href="https://forms.gle/13Csm1tFv5iRPvMX6" target={"_blank"} className="button w-fit mx-auto px-8 lg:m-0">Apply For GopherCon Africa 2024 Ticket Scholarships</a>
+        <a href="https://forms.gle/13Csm1tFv5iRPvMX6" target={"_blank"} className="text-sm button w-fit mx-auto px-8 lg:m-0">Apply For GopherCon Africa 2024 Ticket Scholarships</a>
       </div>
 
       <div className="md:w-1/2 flex justify-center items-center p-6">

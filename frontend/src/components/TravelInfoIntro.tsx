@@ -15,7 +15,7 @@ export default function TravelInfoIntro() {
       </div>
 
       <div className={"text-center md:w-1/2 p-6 md:text-left flex flex-col lg:justify-center"}>
-        <h2 className={"text-5xl  md:text-3xl font-bold text-secondary mb-3"}>
+        <h2 className={"text-2xl lg:text-5xl  md:text-3xl font-bold text-secondary mb-3"}>
           Travel Info
         </h2>
 

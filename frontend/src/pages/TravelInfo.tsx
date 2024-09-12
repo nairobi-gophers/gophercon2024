@@ -84,7 +84,7 @@ const TravelInfo: React.FC = () => {
       <Navbar />
       <div
         className={"container mx-auto md:w-1/2 p-6 md:text-left flex flex-col lg:mt-[104px]"}>
-        <h2 className="text-3xl md:text-5xl font-bold mb-6 text-center">
+        <h2 className="text-lg lg:text-3xl md:text-5xl font-bold mb-6 text-center">
           Travel Info
         </h2>
 
@@ -105,7 +105,6 @@ const TravelInfo: React.FC = () => {
           we look forward to welcoming you to an unforgettable event!
         </p>
       </div>
-
       <AccommodationInfo />
       <VisaInfo />
       <Footer />

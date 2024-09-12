@@ -7,7 +7,6 @@ import TicketHome from '../components/TicketsHome';
 const TicketList: React.FC = () => {
     return (
         <div className="text-sm id" id='sponsorship'>
-
             <Navbar />
             <TicketHome/>
             <ConnectWithUs />
