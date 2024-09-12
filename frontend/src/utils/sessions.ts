@@ -205,7 +205,7 @@ const SessionsList = (): Array<ISession> => {
         },
         {
             startTime: '7:30AM',
-            date: '7:30AM - 9:00AM EAT, Fri Oct 18th',
+            date: '7:30AM - 9:00AM EAT, Sat Oct 19th',
             duration: '1h 30Min',
             title: 'Registration And Gopher Merch Shop',
             room: 'iHub',
@@ -219,7 +219,7 @@ const SessionsList = (): Array<ISession> => {
         },
         {
             startTime: '9:00AM',
-            date: '9:00AM - 10:00AM EAT, Fri Oct 18th',
+            date: '9:00AM - 10:00AM EAT, Sat Oct 19th',
             duration: '1h',
             title: 'Keynote',
             room: 'Main Conference Hall, iHub',
@@ -233,7 +233,7 @@ const SessionsList = (): Array<ISession> => {
         },
         {
             startTime: '10:00AM',
-            date: '10:00AM - 10:40AM EAT, Fri Oct 18th',
+            date: '10:00AM - 10:40AM EAT, Sat Oct 19th',
             duration: 'Main Talk 40 Min',
             title: 'Effective Testing Strategies for Large Data Inserts into PostgreSQL Tables',
             room: 'Main Conference Hall, iHub',
