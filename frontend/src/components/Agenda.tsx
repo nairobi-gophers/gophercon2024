@@ -44,7 +44,7 @@ const Sessions = () => {
                         }
                     </div>}
                     {(activeDay == 'all' || activeDay == '19th') && <div className="mt-8">
-                        <p className="text-left text-lg font-semibold">Fri Oct 19</p>
+                        <p className="text-left text-lg font-semibold">Sat Oct 19</p>
                         {
                             activeSessions.map(session => {
                                 if (session.day == '19th') {
