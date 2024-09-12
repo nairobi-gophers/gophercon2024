@@ -49,7 +49,7 @@ function VisaInfo() {
           Visa applications in Kenya are done online through the
           {' '}
           <a href={'https://www.ecitizen.go.ke'} target='_blank'
-             className={'font-bold underline'}>ecitizen</a>
+            className={'font-bold underline'}>ecitizen</a>
           {' '}
           website, which is the official service portal for the Kenyan
           Government.
@@ -61,7 +61,7 @@ function VisaInfo() {
         </p>
 
         <a href={'https://immigration.ecitizen.go.ke/index.php?id=5'} target='_blank'
-           className="button w-fit mx-auto lg:m-0">Visa Process</a>
+          className="button w-fit mx-auto lg:m-0">Visa Process</a>
 
       </div>
 
@@ -81,15 +81,15 @@ function VisaInfo() {
 const TravelInfo: React.FC = () => {
   return (
     <div className="text-sm id" id='sponsorship'>
-      <Navbar/>
+      <Navbar />
       <div
-          className={"container mx-auto md:w-1/2 p-6 md:text-left flex flex-col lg:mt-[104px]"}>
+        className={"container mx-auto md:w-1/2 p-6 md:text-left flex flex-col lg:mt-[104px]"}>
         <h2 className="text-3xl md:text-5xl font-bold mb-6 text-center">
           Travel Info
         </h2>
 
         <p
-            className={"w-[70%] mx-auto text-secondary text-sm mb-6 text-justify lg:text-center"}>
+          className={"w-full lg:w-[70%] mx-auto text-secondary text-sm mb-6 text-justify lg:text-center"}>
           We're thrilled that you've decided to join us for GopherCon
           Africa
           2024!
@@ -106,11 +106,11 @@ const TravelInfo: React.FC = () => {
         </p>
       </div>
 
-      <AccommodationInfo/>
-      <VisaInfo/>
-      <Footer/>
+      <AccommodationInfo />
+      <VisaInfo />
+      <Footer />
     </div>
-    );
+  );
 };
 
 export default TravelInfo;
