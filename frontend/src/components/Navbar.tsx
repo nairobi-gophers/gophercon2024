@@ -41,6 +41,12 @@ const Navbar: React.FC = () => {
                                         Home
                                     </NavLink>
                                     <NavLink
+                                        to="/agenda"
+                                        className={({ isActive }) => `border-b-2 w-fit p-3 ${isActive ? 'border-secondary' : 'border-white'}`}
+                                    >
+                                        Agenda
+                                    </NavLink>
+                                    <NavLink
                                         to="/speakers"
                                         className={({ isActive }) => `border-b-2 w-fit p-3 ${isActive ? 'border-secondary' : 'border-white'}`}
                                         onClick={() => scroll('speakers')}
