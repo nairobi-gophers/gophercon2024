@@ -1,5 +1,6 @@
 import {LocationIcon} from "./icons/Location.tsx";
 import SpeakerImagePH from "../assets/speakers/placeholder.png";
+import Twitter from "../assets/icons/twitter-outline.svg";
 
 export interface ISession {
     startTime: string
@@ -50,8 +51,9 @@ const SessionCard = (props: IProps) => {
                           <img className="w-16" src={props.session.image ?? SpeakerImagePH} alt=""/>
                           </div>
                           <div className="font-normal">
-                          <p className="font-semibold">{props.session.name}</p>
+                              <p className="font-semibold">{props.session.name}</p>
                               <p>{props.session.role} {props.session.company}</p>
+                              <img className="w-8" src={Twitter} alt=""/>
                           </div>
                       </div>
                       <p>{props.session.titleDescription}</p>

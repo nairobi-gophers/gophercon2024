@@ -7,7 +7,7 @@ export function HomeBanner() {
       </p>
 
       <div className="w-fit p-8 space-y-2 mx-auto border border-secondary rounded-md bg-white">
-        <p><b>Date:</b> 18 - 19th October 2024</p>
+        <p><b>Date:</b> 18th - 19th October 2024</p>
         <p><b>City:</b> Nairobi, Kenya</p>
         <p><b>Venue:</b> iHub</p>
         <div>
