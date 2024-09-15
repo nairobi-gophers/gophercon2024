@@ -51,7 +51,7 @@ const SessionCard = (props: IProps) => {
                       </p>
                   </div>
                   <div className="mt-2">
-                      <div className="flex justify-start space-x-2 items-center">
+                      <div className="flex-1 lg:flex justify-start space-x-2 items-center">
                           <div className="flex justify-start space-x-1 items-center">
                               <div className="p-4">
                                   <img className="w-16" src={props.session.image ?? SpeakerImagePH} alt=""/>
