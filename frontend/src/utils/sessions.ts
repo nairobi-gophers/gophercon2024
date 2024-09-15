@@ -20,7 +20,7 @@ const SessionsList = (): Array<ISession> => {
             startTime: '9:00AM',
             date: '9:00AM - 11:00AM EAT, Fri Oct 18th',
             duration: '2h',
-            title: 'Workshop',
+            title: 'Workshop (TBA)',
             room: 'Main Conference Room, iHub',
             description: "Detail coming soon",
             level: "All attendees",
@@ -48,7 +48,7 @@ const SessionsList = (): Array<ISession> => {
             startTime: '11:15AM',
             date: '11:15AM - 1:15PM EAT, Fri Oct 18th',
             duration: '2h',
-            title: 'Workshop',
+            title: 'Workshop (TBA)',
             room: 'Main Conference Room, iHub',
             description: "Detail coming soon",
             level: "All attendees",
@@ -83,7 +83,7 @@ const SessionsList = (): Array<ISession> => {
             "- Learn best practices for implementing interfaces effectively",
             level: "All attendees",
             name: "Sammy Oina",
-            role: "S/W Developer",
+            role: "S/W Engineer",
             company: "",
             titleDescription: "",
             day: "18th"
@@ -128,9 +128,12 @@ const SessionsList = (): Array<ISession> => {
                 "        </ul>",
             level: "All attendees",
             name: "Aryan Mehrotra",
-            role: "S/W Developer",
+            role: "S/W Engineer",
             company: "",
             titleDescription: "",
+            coPresenterName: 'Umang Mundhra',
+            coPresenterRole: 'S/W Engineer',
+            coPresenterCompany: '',
             day: "18th"
         },
         {
@@ -154,7 +157,7 @@ const SessionsList = (): Array<ISession> => {
                 "Whether you are new to GO or an experienced developer, this talk will provide you with valuable insights and actionable strategies to enhance your coding practices. By adopting these principles, you’ll be able to create codebases that are not only robust and scalable but also a pleasure to work with.",
             level: "All attendees",
             name: "JA Asuquo",
-            role: "S/W Developer",
+            role: "S/W Engineer",
             company: "",
             titleDescription: "",
             day: "18th"
@@ -184,7 +187,7 @@ const SessionsList = (): Array<ISession> => {
                 "<b>Key Takeaways:</b> - Comprehensive understanding of Event-driven architecture and the why behind it all - Understanding how to leverage Go and Kafka to build event-driven architectures - Knowledge of best practices and use cases for Go and Kafka in building EDAs - Inspiration to leverage EDAs for building efficient and scalable solutions.",
             level: "All attendees",
             name: "Amarachi Iheanacho",
-            role: "S/W Developer",
+            role: "S/W Engineer",
             company: "",
             titleDescription: "",
             day: "18th"
@@ -262,7 +265,298 @@ const SessionsList = (): Array<ISession> => {
                 "The session sets the stage by explaining why these technologies are preferred for managing large data volumes and highlights real-world applications.",
             level: "All attendees",
             name: "Ufia Irene",
-            role: "S/W Developer",
+            role: "S/W Engineer",
+            company: "",
+            titleDescription: "",
+            day: "19th"
+        },
+        {
+            startTime: '10:40AM',
+            date: '10:40AM - 11:00AM EAT, Fri Oct 19th',
+            duration: '20Min',
+            title: 'Coffee Break',
+            room: 'iHub',
+            description: "",
+            level: "All attendees",
+            name: "",
+            role: "",
+            company: "",
+            titleDescription: "",
+            day: "19th"
+        },
+        // {
+        //     startTime: '11:00AM',
+        //     date: '11:00AM - 11:40AM EAT, Sat Oct 19th',
+        //     duration: 'Main Talk 40 Min',
+        //     title: 'Hands-On Observability: Monitoring Go Applications with OpenTelemetry and Grafana',
+        //     room: 'Main Conference Hall, iHub',
+        //     description: "<h1>Workshop Agenda</h1>\n" +
+        //         "    <br>   " +
+        //         "    <h2>Setting the Stage:</h2>\n" +
+        //         "    <ul>\n" +
+        //         "        <li>- Introduction to observability and its importance in Go applications.</li>\n" +
+        //         "        <li>- Overview of OpenTelemetry and Grafana and their roles in observability.</li>\n" +
+        //         "    </ul>\n" +
+        //         "<br>" +
+        //         "    <h2>Instrumenting Your Go Code:</h2>\n" +
+        //         "    <ul>\n" +
+        //         "        <li>- Hands-on exercise: Instrumenting a Go application with OpenTelemetry.</li>\n" +
+        //         "        <li>- Generating and exporting metrics, traces, and logs.</li>\n" +
+        //         "    </ul>\n" +
+        //         "<br>" +
+        //         "    <h2>Visualizing Insights with Grafana:</h2>\n" +
+        //         "    <ul>\n" +
+        //         "        <li>Setting up Grafana for visualizing telemetry data.</li>\n" +
+        //         "        <li>Creating dashboards to monitor key metrics and traces.</li>\n" +
+        //         "    </ul>\n" +
+        //         "<br>" +
+        //         "    <h2>Logging for Contextual Observability:</h2>\n" +
+        //         "    <ul>\n" +
+        //         "        <li>- Hands-on exercise: Implementing structured logging in Go with OpenTelemetry.</li>\n" +
+        //         "        <li>- Enhancing logs with contextual information for better traceability.</li>\n" +
+        //         "    </ul>\n" +
+        //         "<br>" +
+        //         "    <h2>Error Handling and Alerting:</h2>\n" +
+        //         "    <ul>\n" +
+        //         "        <li>- Strategies for effective error handling in Go applications.</li>\n" +
+        //         "        <li>- Configuring alerts based on metrics and traces in Grafana.</li>\n" +
+        //         "    </ul>\n" +
+        //         "\n" +
+        //         "    <h2>Q&A Session and Open Discussion:</h2>",
+        //     level: "All attendees",
+        //     name: "Desmond Obisi",
+        //     role: "S/W Engineer",
+        //     company: "",
+        //     titleDescription: "",
+        //     day: "19th"
+        // },
+        {
+            startTime: '11:00AM',
+            date: '11:00AM - 11:40AM EAT, Sat Oct 19th',
+            duration: 'Main Talk 40 Min',
+            title: 'SDK Secrets: Unlocking API Magic',
+            room: 'Main Conference Hall, iHub',
+            description: "In this exploration of SDK development with Go, we will cover the “hows” and “whys” that every developer should know when building an SDK for their APIs. We will explore the foundational principles and best practices for building efficient, user-friendly, and robust SDKs. We will cover seamless API integrations for improved programmatic functionality. We will cover the basics, core design principles and implementation strategies you can leverage to ensure a successful SDK for your APIs. The session will wrap up with a live demo of an SDK, during which attendees will see firsthand the functionality and usefulness of this powerful tool, turning theoretical knowledge into practical skills. This session will benefit seasoned developers and developers starting with their Golang careers.",
+            level: "All attendees",
+            name: "Ehi Enabs",
+            role: "S/W Engineer",
+            company: "",
+            titleDescription: "",
+            day: "19th"
+        },
+        {
+            startTime: '11:40AM',
+            date: '11:40AM - 12:05PM EAT, Sat Oct 19th',
+            duration: 'Lightening Talk 25 Min',
+            title: 'Building a Local Go Community as a Student',
+            room: 'Main Conference Hall, iHub',
+            description: "We will explore key steps such as identifying the right audience, organising engaging events, and leveraging online and offline resources to foster growth. I will also share insights on overcoming common obstacles, from balancing academic responsibilities to maintaining community engagement. Whether you’re a student looking to start your own community or an experienced developer seeking to expand your reach, this talk will offer practical advice and inspiration for growing a vibrant local tech ecosystem.\n" +
+                "<br>" +
+                "Join me to learn how you can make a meaningful impact in your community and turn your passion for technology into a collaborative, supportive network.",
+            level: "All attendees",
+            name: "Mudasiru Rasheed",
+            role: "S/W Engineer",
+            company: "",
+            titleDescription: "",
+            day: "19th",
+            twitter: 'taiwrash'
+        },
+        {
+            startTime: '12:05PM',
+            date: '12:05PM - 12:45PM EAT, Sat Oct 19th',
+            duration: 'Main Talk 40 Min',
+            title: 'Understanding Entropy in Design Systems',
+            room: 'Main Conference Hall, iHub',
+            description: "<h1>Taming Code Chaos: Reducing Entropy in Go Design Systems</h1>\n" +
+                "    <br>" +
+                "    <p>Is your codebase spiraling out of control? High entropy can lead to unpredictable behavior, making your code difficult to maintain and scale. In this talk, we’ll dive into the concept of entropy in software design, focusing on practical strategies to bring order to your Go projects.</p>\n" +
+                "<br>" +
+                "    <h2>We’ll explore:</h2>\n" +
+                "    <ul class='ml-2'>\n" +
+                "        <li><strong>- Consistent Coding Practices:</strong> How tools like <code>gofmt</code> and <code>golint</code> can enforce standards and reduce complexity.</li>\n" +
+                "        <li><strong>- Clear Package Structures:</strong> Organizing your code for maximum clarity and minimal chaos.</li>\n" +
+                "        <li><strong>- Interface-Driven Design:</strong> Using interfaces to define clear contracts and reduce coupling.</li>\n" +
+                "        <li><strong>- Dependency Injection:</strong> Managing dependencies explicitly to improve testability and maintainability.</li>\n" +
+                "        <li><strong>- Comprehensive Testing:</strong> Ensuring your code remains consistent and reliable through rigorous testing.</li>\n" +
+                "    </ul>\n" +
+                "<br>" +
+                "    <p>You’ll learn how to transform your Go codebase into a well-oiled machine through real-world examples and actionable insights. This talk will provide you with the tools and knowledge to keep your projects clean, organized, and scalable.</p>\n" +
+                "<br>" +
+                "    <p>Don’t let your codebase descend into chaos. Join us and discover the secrets to taming entropy in your design systems!</p>\n",
+            level: "All attendees",
+            name: "Nwokoye Chigozie",
+            role: "S/W Engineer",
+            company: "",
+            titleDescription: "",
+            day: "19th"
+        },
+        {
+            startTime: '12:45PM',
+            date: '12:45PM - 1:15PM EAT, Sat Oct 19th',
+            duration: 'Community 30 Min',
+            title: 'Community Roundtable',
+            room: 'Main Conference Hall, iHub',
+            description: "This is a great chance to connect with the Go community and event sponsors, allowing you to ask questions and learn more about Go and its growing community in Africa.",
+            level: "All attendees",
+            name: "GopherCon Africa",
+            role: "",
+            company: "",
+            titleDescription: "",
+            day: "19th"
+        },
+        {
+            startTime: '1:15PM',
+            date: '1:15PM - 2:00PM EAT, Fri Oct 19th',
+            duration: '45Min',
+            title: 'Lunch Break',
+            room: 'iHub',
+            description: "",
+            level: "All attendees",
+            name: "",
+            role: "",
+            company: "",
+            titleDescription: "",
+            day: "19th"
+        },
+        {
+            startTime: '2:00PM',
+            date: '2:00PM - 2:25PM EAT, Sat Oct 19th',
+            duration: 'Lightening Talk 25 Min',
+            title: 'Realizing Hexagonal Architecture in Go',
+            room: 'Main Conference Hall, iHub',
+            description: "  <p>With the fast rate at which the software development field is changing, it truly matters that your application remains maintainable, testable, and scalable. Hexagonal Architecture, also called Ports and Adapters, shows the runway lights for developers to create applications that are flexible and decoupled.</p>\n" +
+                "    <br>" +
+                "    <p>Attend a great talk on <strong>“Realizing Hexagonal Architecture in Go”</strong>—explore how this architecture can uplift your Go projects. I will show a case and demonstrate practical steps in the realization of hexagonal architecture in Go, where one can easily morph complex dependencies into easily manageable components. You will learn to design your applications so that they resist change, you can pivot easily between different technologies, and you can easily test each part of your system in isolation.</p>\n" +
+                "    <br>" +
+                "    <p>This talk will explain how Hexagonal Architecture could loosen up your codebase, making it more adaptive, and how it will help you fulfill the demands of the modern development cycle. It doesn’t matter whether you are a well-experienced Go developer or you have just started with this language; this talk will provide you with some great insights and tricks to take your Go application to the next level.</p>\n" +
+                "    <br>" +
+                "    <p>Don’t miss your chance to level up your development skills and ensure your projects are future-proof. Let’s build better software, one hexagon at a time.</p>\n",
+            level: "All attendees",
+            name: "Kathurima",
+            role: "David",
+            company: "",
+            titleDescription: "",
+            day: "19th"
+        },
+        {
+            startTime: '2:25PM',
+            date: '2:25PM - 3:05PM EAT, Sat Oct 19th',
+            duration: 'Main Talk 40 Min',
+            title: 'Mastering Intra-Service Communication in Go with gRPC',
+            room: 'Main Conference Hall, iHub',
+            description: " <p>When working with microservices, it’s essential to have efficient and reliable communication between services. gRPC provides a strong solution for intra-service communication in Go applications, thanks to its high performance and low latency.</p>\n" +
+                "    <br>" +
+                "    <p>This presentation will explore the ins and outs of using gRPC for intra-service communication in Go applications. We’ll begin with an introduction to gRPC, comparing it with REST and emphasizing its unique advantages. The session will cover the following key topics:</p>\n" +
+                "<br>" +
+                "    <ul class='mt-2 ml-2'>\n" +
+                "        <li>- Getting Started with gRPC and Protocol Buffers</li>\n" +
+                "        <li>- Setting up a gRPC server and client in Go</li>\n" +
+                "        <li>- Implementing secure and high-performance service-to-service communication</li>\n" +
+                "        <li>- Best practices for defining and evolving gRPC services</li>\n" +
+                "        <li>- Troubleshooting common issues and debugging gRPC applications</li>\n" +
+                "    </ul>\n" +
+                "    <br>" +
+                "    <p>Attendees will gain a thorough understanding of gRPC and practical advice for integrating it into their Go projects, enhancing performance and maintainability.</p>\n",
+            level: "All attendees",
+            name: "Kennedy Karoko",
+            role: "S/W Engineer",
+            company: "",
+            titleDescription: "",
+            day: "19th"
+        },
+        {
+            startTime: '',
+            date: '2:25PM - 3:05PM EAT, Sat Oct 19th',
+            duration: 'Main Talk 40 Min',
+            title: 'Engineering Reliable gRPC APIs: The World of Instrumentation',
+            room: 'Boardroom I, iHub',
+            description: "This session will cover adding monitoring and observability features to gRPC-based APIs built with Go. Attendees will learn about the various approaches to instrumenting gRPC APIs, including adding logging and tracing, monitoring API performance, implementing circuit breakers, and adding health checks. The session will also include practical examples of how to use Go to implement these features in gRPC APIs and best practices for engineering reliable and performant gRPC APIs through instrumentation.",
+            level: "All attendees",
+            name: "Rodney Osodo",
+            role: "S/W Engineer",
+            company: "",
+            titleDescription: "",
+            day: "19th"
+        },
+        {
+            startTime: '3:05PM',
+            date: '3:05PM - 3:45PM EAT, Sat Oct 19th',
+            duration: 'Main Talk 40 Min',
+            title: 'Testing in Go: Unlocking Confidence and Efficiency',
+            room: 'Main Conference Hall, iHub',
+            description: " <p>Testing is an integral part of software development, ensuring that applications are reliable, maintainable, and bug-free. In this session, we’ll explore the fundamentals and advanced techniques of testing in Go.</p>\n" +
+                "<br>" +
+                "    <p>We’ll start with the basics, covering Go’s built-in testing tools and how to write effective unit tests. Then, we’ll delve into more advanced topics like table-driven tests, mocking dependencies, and leveraging the power of Go’s testing frameworks to handle complex scenarios. We’ll also explore tools for benchmarking and profiling your tests to ensure optimal performance. Whether you’re new to Go or a seasoned developer, you’ll walk away with practical knowledge and strategies to improve the quality of your Go applications.</p>\n" +
+                "<br>" +
+                "    <h2>Key Takeaways:</h2>\n" +
+                "    <ul>\n" +
+                "        <li>Gain a thorough understanding of Go’s built-in testing tools and their usage.</li>\n" +
+                "        <li>Learn advanced techniques for writing maintainable and effective tests in Go.</li>\n" +
+                "        <li>Discover how to use popular Go testing frameworks to streamline the testing process.</li>\n" +
+                "        <li>Understand the importance of performance testing and how to conduct it in Go.</li>\n" +
+                "        <li>Explore best practices to avoid common testing mistakes and pitfalls in Go development.</li>\n" +
+                "    </ul>\n" +
+                "<br>" +
+                "    <p>This talk promises to be an engaging and informative journey into the world of Go testing, equipping you with the skills and knowledge to write tests with confidence and build robust Go applications.</p>\n",
+            level: "All attendees",
+            name: "Kalio Princewill",
+            role: "S/W Engineer",
+            company: "",
+            titleDescription: "",
+            day: "19th"
+        },
+        {
+            startTime: '3:45PM',
+            date: '3:45PM - 4:15PM EAT, Sat Oct 19th',
+            duration: 'Community 30 Min',
+            title: 'Panel Discussion [Podcast]: The State of Golang in Africa',
+            room: 'Main Conference Hall, iHub',
+            description: "This is a great chance to connect with the Go community and event sponsors, allowing you to ask questions and learn more about Go and its growing community in Africa.",
+            level: "All attendees",
+            name: "",
+            role: "",
+            company: "",
+            titleDescription: "",
+            day: "19th"
+        },
+        {
+            startTime: '4:15PM',
+            date: '4:15PM - 4:30PM EAT, Sat Oct 19th',
+            duration: 'Closing Remarks 15 Min',
+            title: 'Closing Remarks and Sponsors Appreciation',
+            room: 'Main Conference Hall, iHub',
+            description: "This is a great chance to connect with the Go community and event sponsors, allowing you to ask questions and learn more about Go and its growing community in Africa.",
+            level: "All attendees",
+            name: "",
+            role: "",
+            company: "",
+            titleDescription: "",
+            day: "19th"
+        },
+        {
+            startTime: '4:30PM',
+            date: '4:30PM - 5:00PM EAT, Sat Oct 19th',
+            duration: '30 Min',
+            title: 'Commute To GopherCon Party (TBC)',
+            room: 'TBC',
+            description: "",
+            level: "All attendees",
+            name: "",
+            role: "",
+            company: "",
+            titleDescription: "",
+            day: "19th"
+        },
+        {
+            startTime: '5:00PM',
+            date: '5:00PM - 9:00PM EAT, Sat Oct 19th',
+            duration: '4 Hr',
+            title: 'First GopherCon Africa Party (TBC)',
+            room: 'TBC',
+            description: "",
+            level: "All attendees",
+            name: "",
+            role: "",
             company: "",
             titleDescription: "",
             day: "19th"
