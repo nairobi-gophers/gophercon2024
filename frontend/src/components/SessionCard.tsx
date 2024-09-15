@@ -1,6 +1,5 @@
 import {LocationIcon} from "./icons/Location.tsx";
 import SpeakerImagePH from "../assets/speakers/placeholder.png";
-import Twitter from "../assets/icons/twitter-outline.svg";
 
 export interface ISession {
     startTime: string
@@ -11,11 +10,17 @@ export interface ISession {
     description: string
     level: string
     image?: string
+    coPresenterImage?: string
     name: string
     role: string
     company: string
     titleDescription: string
     day: string
+    twitter?: string
+    bio?: string
+    coPresenterName?: string
+    coPresenterRole?: string
+    coPresenterCompany?: string
 }
 
 interface IProps {
@@ -25,9 +30,9 @@ const SessionCard = (props: IProps) => {
   return (
       <div className={`w-full lg:flex text-left my-4 flex-1 lg:space-x-4`}>
           <div className="py-4 w-20 text-center">
-              <div className="bg-blue-700 text-white rounded p-2">
+              {props.session.startTime.length > 2 && <div className="bg-blue-700 text-white rounded p-2">
                   {props.session.startTime}
-              </div>
+              </div>}
           </div>
           <div className="border flex-1 p-4">
               <p className="font-semibold text-gray-600 tracking-wider">{props.session.date} <span
@@ -46,17 +51,37 @@ const SessionCard = (props: IProps) => {
                       </p>
                   </div>
                   <div className="mt-2">
-                      <div className="flex justify-start space-x-1 items-center">
-                          <div className="p-4">
-                          <img className="w-16" src={props.session.image ?? SpeakerImagePH} alt=""/>
+                      <div className="flex-1 lg:flex justify-start space-x-2 items-center">
+                          <div className="flex justify-start space-x-1 items-center">
+                              <div className="p-4">
+                                  <img className="w-16" src={props.session.image ?? SpeakerImagePH} alt=""/>
+                              </div>
+                              <div className="font-normal">
+                                  <p className="font-semibold">{props.session.name}</p>
+                                  <p>{props.session.role} {props.session.company.length > 2 ? '@' + props.session.company : props.session.company}</p>
+                                  {/*<p className='my-1'>{props.session.bio}</p>*/}
+                                  {/*{(props.session.twitter && props.session.twitter.length > 2) && <a href={`https://x.com/${props.session.twitter}`}>*/}
+                                  {/*    <img className="w-8" src={Twitter} alt=""/>*/}
+                                  {/*    <span>@{props.session.twitter}</span>*/}
+                                  {/*</a>}*/}
+                              </div>
                           </div>
-                          <div className="font-normal">
-                              <p className="font-semibold">{props.session.name}</p>
-                              <p>{props.session.role} {props.session.company}</p>
-                              <img className="w-8" src={Twitter} alt=""/>
-                          </div>
+                          {(props.session.coPresenterName && props.session.coPresenterName.length > 1) && <div className="flex justify-start space-x-1 items-center">
+                              <div className="p-4">
+                                  <img className="w-16" src={props.session.coPresenterImage ?? SpeakerImagePH} alt=""/>
+                              </div>
+                              <div className="font-normal">
+                                  <p className="font-semibold">{props.session.coPresenterName}</p>
+                                  <p>{props.session.coPresenterRole} {(props.session.coPresenterCompany && props.session.coPresenterCompany.length > 2) ? '@' + props.session.coPresenterCompany : props.session.coPresenterCompany}</p>
+                                  {/*<p className='my-1'>{props.session.bio}</p>*/}
+                                  {/*{(props.session.twitter && props.session.twitter.length > 2) && <a href={`https://x.com/${props.session.twitter}`}>*/}
+                                  {/*    <img className="w-8" src={Twitter} alt=""/>*/}
+                                  {/*    <span>@{props.session.twitter}</span>*/}
+                                  {/*</a>}*/}
+                              </div>
+                          </div>}
                       </div>
-                      <p>{props.session.titleDescription}</p>
+                      {/*<p>{props.session.titleDescription}</p>*/}
                   </div>
               </div>}
           </div>

@@ -23,7 +23,7 @@ const Sessions = () => {
                 GopherCon Africa Agenda
             </h2>
             <div className="w-full lg:w-[80%] mt-8">
-                <div className="border border-b-2 border-l-0 border-r-0 border-t-0 overscroll-contain">
+                <div className="border border-b-2 border-l-0 border-r-0 bg-gray-200 pt-6 border-t-0 overscroll-contain sticky top-0 z-50">
                     <ul className="flex space-x-4 cursor-pointer">
                         <li onClick={() => setActiveDay('all')} className={`${activeDay == 'all' ? 'border border-b-4 border-l-0 border-r-0 border-t-0 border-blue-600' : ''} px-2`}>All Days</li>
                         <li onClick={() => setActiveDay('18th')} className={`${activeDay == '18th' ? 'border border-b-4 border-l-0 border-r-0 border-t-0 border-blue-600' : ''} px-2`}>Fri Oct 18th</li>

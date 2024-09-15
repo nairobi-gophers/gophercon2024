@@ -4,7 +4,7 @@ export default function TravelInfoIntro() {
   return (
     <section
       id="travel-info"
-      className="container mx-auto flex flex-col lg:flex-row lg:px-6 h-fit"
+      className="container mx-auto flex flex-col lg:flex-row lg:px-6 h-fit mb-16"
     >
       <div className="md:w-1/2 flex justify-center items-center">
         <img
