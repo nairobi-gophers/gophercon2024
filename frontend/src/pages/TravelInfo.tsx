@@ -48,19 +48,16 @@ function VisaInfo() {
           className={"text-justify lg:max-w-[500px] text-secondary text-sm mb-6"}>
           Visa applications in Kenya are done online through the
           {' '}
-          <a href={'https://www.ecitizen.go.ke'} target='_blank'
-            className={'font-bold underline'}>ecitizen</a>
+          <a href={'https://www.etakenya.go.ke/en'} target='_blank'
+            className={'font-bold underline'}>etakenya</a>
           {' '}
-          website, which is the official service portal for the Kenyan
-          Government.
-          You will be required to register as a as a foreigner in order to
-          access the
-          visa application portal. The visa process is outlined in the in the
-          page linked below.
+          The Ministry of Interior and National Administration, State Department for Immigration and Citizen Services, Directorate of Immigration Services has developed and is operating the Republic of Kenya Electronic Travel Authorisation (eTA).
 
+          Kenya eTA is a semi-automated system that determines the eligibility of visitors to travel to Kenya. An eTA offers permission to travel and is authorised by the Government of the Republic of Kenya. The possession of an eTA is not the final authority to enter the Republic of Kenya.
+           Admissibility will be determined at the point of entry
         </p>
 
-        <a href={'https://immigration.ecitizen.go.ke/index.php?id=5'} target='_blank'
+        <a href={'https://www.etakenya.go.ke/en/enroll/launch-screen'} target='_blank'
           className="button w-fit mx-auto lg:m-0">Visa Process</a>
 
       </div>
