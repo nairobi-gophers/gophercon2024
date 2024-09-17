@@ -1,4 +1,4 @@
-import {ISession} from "../components/SessionCard.tsx";
+import { ISession } from "../components/SessionCard.tsx";
 
 const SessionsList = (): Array<ISession> => {
     return [
@@ -79,8 +79,8 @@ const SessionsList = (): Array<ISession> => {
             title: 'Unveiling the Power of Interfaces: Go’s Secret Weapon',
             room: 'Main Conference Hall, iHub',
             description: "Interfaces are one of the most powerful and versatile features in Go, yet their true potential is often overlooked or underutilized. In this talk, we’ll unveil the secrets behind interfaces and demonstrate how to harness their full power to write more maintainable, testable, and flexible code. \n\n" +
-                "What You’ll Learn \n- Understand the fundamental principles of interface design in Go\n"+
-            "- Learn best practices for implementing interfaces effectively",
+                "What You’ll Learn \n- Understand the fundamental principles of interface design in Go\n" +
+                "- Learn best practices for implementing interfaces effectively",
             level: "All attendees",
             name: "Sammy Oina",
             role: "S/W Engineer",
@@ -266,6 +266,8 @@ const SessionsList = (): Array<ISession> => {
             level: "All attendees",
             name: "Ufia Irene",
             role: "S/W Engineer",
+            coPresenterName: "Orji Cecilia",
+            coPresenterRole: "S/W Engineer",
             company: "",
             titleDescription: "",
             day: "19th"
