@@ -19,13 +19,28 @@ const SessionsList = (): Array<ISession> => {
     {
       startTime: '9:00AM',
       date: '9:00AM - 11:00AM EAT, Fri Oct 18th',
-      duration: '2h',
-      title: 'Workshop (TBA)',
+      duration: 'Workshop 2h',
+      title: 'Go for Infrastructure Test Automation',
       room: 'Main Conference Room, iHub',
-      description: "Detail coming soon",
+      description: "<b>What a student is expected to learn</b><br>" +
+          "<br>" +
+          "1. The essentials of the Go testing library.<br>" +
+          "2. How to write automated tests in Go.<br>" +
+          "3. How to increase confidence in deploying cloud infrastructure using Terratest, an open source Go library to write automated tests, including unit, integration and end-to-end tests for infrastructure code, with Terraform as an example.<br>" +
+          "<br><b>Prerequisites</b><br>" +
+          "<br>" +
+          "1. A free tier AWS account or higher<br>" +
+          "2. Terraform 1.5 or higher<br>" +
+          "3. Go version 1.13 or higher<br>" +
+          "4. Git version 1.5 or higher<br>" +
+          "5. GitHub account<br>" +
+          "6. VS Code<br><br>" +
+          "<b>Preparation</b><br>" +
+          "<br>" +
+          "Personal regular checks on my terraform modules to use in the workshop <br>",
       level: "All attendees",
-      name: "",
-      role: "",
+      name: "Chris Otta",
+      role: "Software Development Engineer in Test",
       company: "",
       titleDescription: "",
       day: "18th"
@@ -47,7 +62,7 @@ const SessionsList = (): Array<ISession> => {
     {
       startTime: '11:15AM',
       date: '11:15AM - 1:15PM EAT, Fri Oct 18th',
-      duration: '2h',
+      duration: 'Workshop 2h',
       title: 'Workshop: Advanced Monitoring and Observability with OpenTelemetry and APItoolkit',
       room: 'Main Conference Room, iHub',
       description: `<p>
