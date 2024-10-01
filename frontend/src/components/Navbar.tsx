@@ -47,13 +47,6 @@ const Navbar: React.FC = () => {
                     Agenda
                   </NavLink>
                   <NavLink
-                    to="/speakers"
-                    className={({ isActive }) => `border-b-2 w-fit p-3 ${isActive ? 'border-secondary' : 'border-white'}`}
-                    onClick={() => scroll('speakers')}
-                  >
-                    Speakers
-                  </NavLink>
-                  <NavLink
                     to="/tickets"
                     className={({ isActive }) => `border-b-2 w-fit p-3 ${isActive ? 'border-secondary' : 'border-white'}`}
                     onClick={() => scroll('tickets')}
@@ -108,12 +101,6 @@ const Navbar: React.FC = () => {
           className={({ isActive }) => `border-b-2 p-3 ${isActive ? 'border-secondary' : 'border-white'}`}
         >
           Agenda
-        </NavLink>
-        <NavLink
-          to="/speakers"
-          className={({ isActive }) => `border-b-2 p-3 ${isActive ? 'border-secondary' : 'border-white'}`}
-        >
-          Speakers
         </NavLink>
         <NavLink
           to="/tickets"

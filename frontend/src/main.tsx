@@ -32,10 +32,6 @@ const router = createBrowserRouter([
     element: <Sponsorship />,
   },
   {
-    path: "/speakers",
-    element: <SpeakersList />,
-  },
-  {
     path: "/tickets",
     element: <TicketList />,
   },
