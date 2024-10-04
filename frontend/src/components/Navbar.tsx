@@ -41,10 +41,10 @@ const Navbar: React.FC = () => {
                     Home
                   </NavLink>
                   <NavLink
-                    to="/agenda"
+                    to="/schedule"
                     className={({ isActive }) => `border-b-2 w-fit p-3 ${isActive ? 'border-secondary' : 'border-white'}`}
                   >
-                    Agenda
+                    Schedule
                   </NavLink>
                   <NavLink
                     to="/speakers"
@@ -104,10 +104,10 @@ const Navbar: React.FC = () => {
           Home
         </NavLink>
         <NavLink
-          to="/agenda"
+          to="/schedule"
           className={({ isActive }) => `border-b-2 p-3 ${isActive ? 'border-secondary' : 'border-white'}`}
         >
-          Agenda
+          Schedule
         </NavLink>
         <NavLink
           to="/speakers"

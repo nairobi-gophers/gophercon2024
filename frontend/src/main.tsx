@@ -10,7 +10,7 @@ import SpeakersList from './pages/SpeakersList.tsx';
 import TicketList from './pages/TicketsList.tsx';
 import SocialsList from './pages/SocialsList.tsx';
 import TravelInfo from "./pages/TravelInfo.tsx";
-import Agenda from "./pages/Agenda.tsx";
+import Schedule from "./pages/Schedule.tsx";
 
 
 const router = createBrowserRouter([
@@ -24,8 +24,8 @@ const router = createBrowserRouter([
     element: <SponsorshipRedirect />,
   },
   {
-    path: "/agenda",
-    element: <Agenda />,
+    path: "/schedule",
+    element: <Schedule />,
   },
   {
     path: "/sponsors",

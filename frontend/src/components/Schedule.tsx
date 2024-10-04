@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import SessionsList from "../utils/sessions.ts";
-import SessionCard, {ISession} from "./SessionCard.tsx";
+import SessionCard, { ISession } from "./SessionCard.tsx";
 
 const Sessions = () => {
     const [activeDay, setActiveDay] = useState<string>('all')
@@ -20,7 +20,7 @@ const Sessions = () => {
             className="container mx-auto px-6 py-12 md:py-24 flex flex-col items-center text-center text-secondary"
         >
             <h2 className="text-3xl md:text-5xl font-bold mt-8 mb-6">
-                GopherCon Africa Agenda
+                GopherCon Africa Schedule
             </h2>
             <div className="w-full lg:w-[80%] mt-8">
                 <div className="border border-b-2 border-l-0 border-r-0 bg-gray-200 pt-6 border-t-0 overscroll-contain sticky top-0 z-50">
