@@ -46,7 +46,7 @@ const profiles = [
     {
         name: 'Amarachi Iheanacho',
         twitterHandle: 'amaraIheanach0',
-        company: '',
+        company: 'Developer Advocate',
         description: `Amarachi Iheanacho is a seasoned developer advocate, technical writer, community contributor, and speaker. She has over four years of experience in building and advocating for solutions while simplifying complex topics for a broader audience.`,
         imageUrl: speakerImage,
         companyLogoUrl: '',
@@ -94,7 +94,7 @@ const profiles = [
     {
         name: 'Orji Cecilia Olanma',
         twitterHandle: '',
-        company: '',
+        company: 'Software Engineer',
         description: `I am a software engineer who transitioned from a customer support agent role into programming. I enjoy contributing to open-source projects and recently developed a keen interest in Bitcoin.`,
         imageUrl: speakerCecilia ,
         companyLogoUrl: '',
@@ -105,7 +105,7 @@ const profiles = [
         company: 'Ultraviolet || Technical Lead',
         description: `Passionate about open source and Golang. Current tech lead at Ultraviolet, building and leading teams in the open-source space.`,
         imageUrl: speakerImage,
-        companyLogoUrl: 'https://ultraviolet.rs/',
+        companyLogoUrl: '',
     },
     {
         name: 'Desmond Obisi',
