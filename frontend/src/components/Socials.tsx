@@ -4,7 +4,7 @@ export default function Socials() {
             id="contact"
             className="container mx-auto py-12 md:py-24 flex flex-col items-center text-center text-secondary"
         >
-            <h2 className="text-3xl md:text-5xl font-bold mb-8">
+            <h2 className="text-3xl md:text-5xl font-bold mt-8 mb-6">
                 Social
             </h2>
             <p className="w-full lg:w-[60%] text-sm md:text-base">
