@@ -9,6 +9,7 @@ import speakerJoseph from '../assets/speakers/Joseph Augustine.jpeg';
 import speakerKen from '../assets/speakers/Kennedy Njagi.jpg';
 import speakerPrince from '../assets/speakers/PrinceWell.jpeg';
 import speakerImage from '../assets/speakers/placeholder.png';
+import speakerAmarachi from '../assets/speakers/Amarachi.jpeg'
 
 const profiles = [
     {
@@ -48,7 +49,7 @@ const profiles = [
         twitterHandle: 'amaraIheanach0',
         company: 'Developer Advocate',
         description: `Amarachi Iheanacho is a seasoned developer advocate, technical writer, community contributor, and speaker. She has over four years of experience in building and advocating for solutions while simplifying complex topics for a broader audience.`,
-        imageUrl: speakerImage,
+        imageUrl: speakerAmarachi,
         companyLogoUrl: '',
     },
     {
