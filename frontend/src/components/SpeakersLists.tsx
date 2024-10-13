@@ -55,7 +55,7 @@ const profiles = [
     {
         name: 'Ehi Enabulele',
         twitterHandle: 'ehienabs',
-        company: 'Wikimedia Foundation',
+        company: 'Wikimedia Foundation || Software Engineer',
         description: `Ehi Enabulele is a Software Engineer at the Wikimedia Foundation, primarily focused on cloud-native and backend engineering. She is passionate about knowledge accessibility and equity and works to maintain APIs for high-volume Wikipedia data reusers.`,
         imageUrl: speakerEhi,
         companyLogoUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Wikimedia_Foundation_logo_-_vertical.svg/220px-Wikimedia_Foundation_logo_-_vertical.svg.png',
@@ -71,7 +71,7 @@ const profiles = [
     {
         name: 'Kennedy Karoko',
         twitterHandle: 'kennedy_karoko',
-        company: '',
+        company: 'Software Engineer',
         description: `I am constantly seeking innovative solutions to everyday problems. I advocate for collaborative efforts to create successful products and deliver long-lasting solutions to large-scale technical problems.`,
         imageUrl: speakerKen,
         companyLogoUrl: '',
@@ -119,7 +119,7 @@ const profiles = [
     {
         name: 'Aryan Mehrotra',
         twitterHandle: '_aryanmehrotra',
-        company: 'GoFr || Maintainer | SDE 2',
+        company: 'GoFr || Maintainer || SDE 2',
         description: `Aryan Mehrotra specializes in building distributed systems that have scaled to millions of users globally. He is currently putting his skills to use at GoFr.`,
         imageUrl: speakerImage,
         companyLogoUrl: 'https://gofr.dev/_next/static/media/blur-cyan.d28a5585.png',
