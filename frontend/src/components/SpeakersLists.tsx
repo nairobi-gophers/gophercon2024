@@ -26,7 +26,7 @@ const profiles = [
         company: 'Software Engineer',
         description: `Backend wizard and Golang enthusiast, skilled at building distributed systems that scale faster than your morning caffeine rush.`,
         imageUrl: speakerImage,
-        companyLogoUrl: 'https://gophers.africa/assets/wordmark_primary-B6eTT4Ct.svg',
+        companyLogoUrl: '',
     },
     {
         name: 'Joseph Augustine Asuquo',
