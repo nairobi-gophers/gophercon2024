@@ -5,6 +5,7 @@ import speakerCecilia from '../assets/speakers/Cecilia.jpeg';
 import speakerChigozie from '../assets/speakers/Chigozie.jpeg';
 import speakerChris from '../assets/speakers/Chris Otta.jpg';
 import speakerEhi from '../assets/speakers/Ehi Enabs.jpg';
+import speakerIrene from '../assets/speakers/Irene.jpg';
 import speakerJoseph from '../assets/speakers/Joseph Augustine.jpeg';
 import speakerKen from '../assets/speakers/Kennedy Njagi.jpg';
 import speakerPrince from '../assets/speakers/PrinceWell.jpeg';
@@ -132,6 +133,14 @@ const profiles = [
         imageUrl: speakerImage,
         companyLogoUrl: 'https://gofr.dev/_next/static/media/blur-cyan.d28a5585.png',
     },
+    {
+        name: 'Irene Ufia',
+        twitterHandle: '',
+        company: 'Interstellar || Software Engineer ',
+        description: `ASoftware engineer at Interstellar, building scalable blockchain systems with a focus on backend development, cloud infrastructure, and security.`,
+        imageUrl: speakerIrene,
+        companyLogoUrl: 'https://interstellar.cm/img/logo/interstellar-logo.png',
+    }
 ];
 
 
