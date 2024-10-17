@@ -19,17 +19,81 @@ const SessionsList = (): Array<ISession> => {
     {
       startTime: '9:00AM',
       date: '9:00AM - 11:00AM EAT, Fri Oct 18th',
-      duration: '2h',
-      title: 'Workshop (TBA)',
+      duration: 'Workshop 2h',
+      title: 'Go for Infrastructure Test Automation',
       room: 'Main Conference Room, iHub',
-      description: "Detail coming soon",
+      description: "<b>What a student is expected to learn</b><br>" +
+        "<br>" +
+        "1. The essentials of the Go testing library.<br>" +
+        "2. How to write automated tests in Go.<br>" +
+        "3. How to increase confidence in deploying cloud infrastructure using Terratest, an open source Go library to write automated tests, including unit, integration and end-to-end tests for infrastructure code, with Terraform as an example.<br>" +
+        "<br><b>Prerequisites</b><br>" +
+        "<br>" +
+        "1. A free tier AWS account or higher<br>" +
+        "2. Terraform 1.5 or higher<br>" +
+        "3. Go version 1.13 or higher<br>" +
+        "4. Git version 1.5 or higher<br>" +
+        "5. GitHub account<br>" +
+        "6. VS Code<br><br>" +
+        "<b>Preparation</b><br>" +
+        "<br>" +
+        "Personal regular checks on my terraform modules to use in the workshop <br>",
       level: "All attendees",
-      name: "",
-      role: "",
+      name: "Chris Otta",
+      role: "Software Development Engineer in Test",
       company: "",
       titleDescription: "",
       day: "18th"
     },
+    // {
+    //   startTime: '9:00AM',
+    //   date: '9:00AM - 11:00AM EAT, Fri Oct 18th',
+    //   duration: 'Workshop 2h',
+    //   title: 'Hands-On Observability: Monitoring Go Applications with OpenTelemetry and Grafana',
+    //   room: 'Boardroom I, iHub',
+    //   description: `<h1>Workshop Agenda</h1>
+
+    // <h2>Setting the Stage:</h2>
+    // <ul>
+    //     <li>Introduction to observability and its importance in Go applications.</li>
+    //     <li>Overview of OpenTelemetry and Grafana and their roles in observability.</li>
+    // </ul>
+
+    // <h2>Instrumenting Your Go Code:</h2>
+    // <ul>
+    //     <li>Hands-on exercise: Instrumenting a Go application with OpenTelemetry.</li>
+    //     <li>Generating and exporting metrics, traces, and logs.</li>
+    // </ul>
+
+    // <h2>Visualizing Insights with Grafana:</h2>
+    // <ul>
+    //     <li>Setting up Grafana for visualizing telemetry data.</li>
+    //     <li>Creating dashboards to monitor key metrics and traces.</li>
+    // </ul>
+
+    // <h2>Logging for Contextual Observability:</h2>
+    // <ul>
+    //     <li>Hands-on exercise: Implementing structured logging in Go with OpenTelemetry.</li>
+    //     <li>Enhancing logs with contextual information for better traceability.</li>
+    // </ul>
+
+    // <h2>Error Handling and Alerting:</h2>
+    // <ul>
+    //     <li>Strategies for effective error handling in Go applications.</li>
+    //     <li>Configuring alerts based on metrics and traces in Grafana.</li>
+    // </ul>
+
+    // <h2>Q&A Session and Open Discussion:</h2>
+    // <ul>
+    //     <li>Best practices and challenges</li>
+    // </ul>`,
+    //   level: "All attendees",
+    //   name: "Desmond Obisi",
+    //   role: "Software Engineer",
+    //   company: "Resilis",
+    //   titleDescription: "",
+    //   day: "18th"
+    // },
     {
       startTime: '11:00AM',
       date: '11:00AM - 11:15AM EAT, Fri Oct 18th',
@@ -47,7 +111,7 @@ const SessionsList = (): Array<ISession> => {
     {
       startTime: '11:15AM',
       date: '11:15AM - 1:15PM EAT, Fri Oct 18th',
-      duration: '2h',
+      duration: 'Workshop 2h',
       title: 'Workshop: Advanced Monitoring and Observability with OpenTelemetry and APItoolkit',
       room: 'Main Conference Room, iHub',
       description: `<p>
@@ -98,8 +162,8 @@ const SessionsList = (): Array<ISession> => {
         "- Learn best practices for implementing interfaces effectively",
       level: "All attendees",
       name: "Sammy Oina",
-      role: "S/W Engineer",
-      company: "",
+      role: "Technical lead",
+      company: "Ultraviolet",
       titleDescription: "",
       day: "18th"
     },
@@ -171,9 +235,9 @@ const SessionsList = (): Array<ISession> => {
         "<br><br>" +
         "Whether you are new to GO or an experienced developer, this talk will provide you with valuable insights and actionable strategies to enhance your coding practices. By adopting these principles, you’ll be able to create codebases that are not only robust and scalable but also a pleasure to work with.",
       level: "All attendees",
-      name: "JA Asuquo",
-      role: "S/W Engineer",
-      company: "",
+      name: "Joseph Augustine Asuquo",
+      role: "Software Engineer",
+      company: "PARTNA",
       titleDescription: "",
       day: "18th"
     },
