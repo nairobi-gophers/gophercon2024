@@ -120,17 +120,18 @@ const SessionsList = (): Array<ISession> => {
       startTime: '2:30PM',
       date: '2:30PM - 2:55PM EAT, Fri Oct 18th',
       duration: 'Lightening Talk 25 Min',
-      title: 'Unveiling the Power of Interfaces: Go’s Secret Weapon',
+      title: 'Building a Local Go Community as a Student',
       room: 'Main Conference Hall, iHub',
-      description: "Interfaces are one of the most powerful and versatile features in Go, yet their true potential is often overlooked or underutilized. In this talk, we’ll unveil the secrets behind interfaces and demonstrate how to harness their full power to write more maintainable, testable, and flexible code. \n\n" +
-        "What You’ll Learn \n- Understand the fundamental principles of interface design in Go\n" +
-        "- Learn best practices for implementing interfaces effectively",
+      description: "We will explore key steps such as identifying the right audience, organising engaging events, and leveraging online and offline resources to foster growth. I will also share insights on overcoming common obstacles, from balancing academic responsibilities to maintaining community engagement. Whether you’re a student looking to start your own community or an experienced developer seeking to expand your reach, this talk will offer practical advice and inspiration for growing a vibrant local tech ecosystem.\n" +
+        "<br>" +
+        "Join me to learn how you can make a meaningful impact in your community and turn your passion for technology into a collaborative, supportive network.",
       level: "All attendees",
-      name: "Sammy Oina",
-      role: "Technical lead",
-      company: "Ultraviolet",
+      name: "Mudasiru Rasheed",
+      role: "S/W Engineer",
+      company: "",
       titleDescription: "",
-      day: "18th"
+      day: "18th",
+      twitter: "taiwrash"
     },
     {
       startTime: '2:55PM',
@@ -348,18 +349,18 @@ const SessionsList = (): Array<ISession> => {
       startTime: '11:40AM',
       date: '11:40AM - 12:05PM EAT, Sat Oct 19th',
       duration: 'Lightening Talk 25 Min',
-      title: 'Building a Local Go Community as a Student',
+      title: 'Unveiling the Power of Interfaces: Go’s Secret Weapon',
       room: 'Main Conference Hall, iHub',
-      description: "We will explore key steps such as identifying the right audience, organising engaging events, and leveraging online and offline resources to foster growth. I will also share insights on overcoming common obstacles, from balancing academic responsibilities to maintaining community engagement. Whether you’re a student looking to start your own community or an experienced developer seeking to expand your reach, this talk will offer practical advice and inspiration for growing a vibrant local tech ecosystem.\n" +
-        "<br>" +
-        "Join me to learn how you can make a meaningful impact in your community and turn your passion for technology into a collaborative, supportive network.",
+      description: "Interfaces are one of the most powerful and versatile features in Go, yet their true potential is often overlooked or underutilized. In this talk, we’ll unveil the secrets behind interfaces and demonstrate how to harness their full power to write more maintainable, testable, and flexible code. \n\n" +
+        "What You’ll Learn \n- Understand the fundamental principles of interface design in Go\n" +
+        "- Learn best practices for implementing interfaces effectively",
       level: "All attendees",
-      name: "Mudasiru Rasheed",
-      role: "S/W Engineer",
-      company: "",
+      name: "Sammy Oina",
+      role: "Technical lead",
+      company: "Ultraviolet",
       titleDescription: "",
       day: "19th",
-      twitter: 'taiwrash'
+      twitter: ''
     },
     {
       startTime: '12:05PM',
