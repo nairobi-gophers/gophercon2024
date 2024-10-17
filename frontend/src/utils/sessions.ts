@@ -18,7 +18,21 @@ const SessionsList = (): Array<ISession> => {
     },
     {
       startTime: '9:00AM',
-      date: '9:00AM - 11:00AM EAT, Fri Oct 18th',
+      date: '9:00AM - 09:30AM EAT, Fri Oct 18th',
+      duration: '30Min',
+      title: "Keynote: Empowering the future with Go. (Africa's Role in the Go Community)",
+      room: 'Main Conference Room, iHub',
+      description: "Keynote: Empowering the future with Go. (Africa's Role in the Go Community)",
+      level: "All attendees",
+      name: "Adesina Hassan",
+      role: "Senior Software Engineer",
+      company: "",
+      titleDescription: "",
+      day: "18th"
+    },
+    {
+      startTime: '9:30AM',
+      date: '9:30AM - 11:30AM EAT, Fri Oct 18th',
       duration: 'Workshop 2h',
       title: 'Go for Infrastructure Test Automation',
       room: 'Main Conference Room, iHub',
@@ -95,8 +109,8 @@ const SessionsList = (): Array<ISession> => {
     //   day: "18th"
     // },
     {
-      startTime: '11:00AM',
-      date: '11:00AM - 11:15AM EAT, Fri Oct 18th',
+      startTime: '11:30AM',
+      date: '11:30AM - 11:45AM EAT, Fri Oct 18th',
       duration: '15Min',
       title: 'Coffee Break',
       room: 'iHub',
@@ -109,8 +123,8 @@ const SessionsList = (): Array<ISession> => {
       day: "18th"
     },
     {
-      startTime: '11:15AM',
-      date: '11:15AM - 1:15PM EAT, Fri Oct 18th',
+      startTime: '11:45AM',
+      date: '11:45AM - 1:45PM EAT, Fri Oct 18th',
       duration: 'Workshop 2h',
       title: 'Workshop: Advanced Monitoring and Observability with OpenTelemetry and APItoolkit',
       room: 'Main Conference Room, iHub',
@@ -138,8 +152,8 @@ const SessionsList = (): Array<ISession> => {
       day: "18th"
     },
     {
-      startTime: '1:15PM',
-      date: '1:15PM - 2:00PM EAT, Fri Oct 18th',
+      startTime: '1:45PM',
+      date: '1:45PM - 2:30PM EAT, Fri Oct 18th',
       duration: '45Min',
       title: 'Lunch Break',
       room: 'iHub',
@@ -152,8 +166,8 @@ const SessionsList = (): Array<ISession> => {
       day: "18th"
     },
     {
-      startTime: '2:00PM',
-      date: '2:00PM - 2:25PM EAT, Fri Oct 18th',
+      startTime: '2:30PM',
+      date: '2:30PM - 2:55PM EAT, Fri Oct 18th',
       duration: 'Lightening Talk 25 Min',
       title: 'Unveiling the Power of Interfaces: Go’s Secret Weapon',
       room: 'Main Conference Hall, iHub',
@@ -168,8 +182,8 @@ const SessionsList = (): Array<ISession> => {
       day: "18th"
     },
     {
-      startTime: '2:25PM',
-      date: '2:25PM - 2:50PM EAT, Fri Oct 18th',
+      startTime: '2:55PM',
+      date: '2:55PM - 3:20PM EAT, Fri Oct 18th',
       duration: 'Lightening Talk 25 Min',
       title: 'GoFr: High-Performance Go Framework for Scalable Web Applications',
       room: 'Main Conference Hall, iHub',
@@ -216,8 +230,8 @@ const SessionsList = (): Array<ISession> => {
       day: "18th"
     },
     {
-      startTime: '2:50PM',
-      date: '2:50PM - 3:30PM EAT, Fri Oct 18th',
+      startTime: '3:20PM',
+      date: '3:20PM - 4:00PM EAT, Fri Oct 18th',
       duration: 'Main Talk 40 Min',
       title: 'CLEAN CODE IN GO',
       room: 'Main Conference Hall, iHub',
@@ -242,8 +256,8 @@ const SessionsList = (): Array<ISession> => {
       day: "18th"
     },
     {
-      startTime: '3:30PM',
-      date: '3:30PM - 4:10PM EAT, Fri Oct 18th',
+      startTime: '4:00PM',
+      date: '4:00PM - 4:40PM EAT, Fri Oct 18th',
       duration: 'Main Talk 40 Min',
       title: 'Event-Driven Architecture with Go and Kafka',
       room: 'Main Conference Hall, iHub',
@@ -272,8 +286,8 @@ const SessionsList = (): Array<ISession> => {
       day: "18th"
     },
     {
-      startTime: '4:10PM',
-      date: '4:10PM - 5:30PM EAT, Fri Oct 18th',
+      startTime: '4:40PM',
+      date: '4:40PM - 6:00PM EAT, Fri Oct 18th',
       duration: '80Min',
       title: 'Closing Remarks | Networking',
       room: 'iHub',
@@ -307,9 +321,9 @@ const SessionsList = (): Array<ISession> => {
       room: 'Main Conference Hall, iHub',
       description: "Keynote",
       level: "All attendees",
-      name: "",
-      role: "",
-      company: "",
+      name: "Anthony Alaribe",
+      role: "Founder",
+      company: "ApiToolkit",
       titleDescription: "",
       day: "19th"
     },
