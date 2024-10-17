@@ -59,55 +59,6 @@ const SessionsList = (): Array<ISession> => {
       titleDescription: "",
       day: "18th"
     },
-    // {
-    //   startTime: '9:00AM',
-    //   date: '9:00AM - 11:00AM EAT, Fri Oct 18th',
-    //   duration: 'Workshop 2h',
-    //   title: 'Hands-On Observability: Monitoring Go Applications with OpenTelemetry and Grafana',
-    //   room: 'Boardroom I, iHub',
-    //   description: `<h1>Workshop Agenda</h1>
-
-    // <h2>Setting the Stage:</h2>
-    // <ul>
-    //     <li>Introduction to observability and its importance in Go applications.</li>
-    //     <li>Overview of OpenTelemetry and Grafana and their roles in observability.</li>
-    // </ul>
-
-    // <h2>Instrumenting Your Go Code:</h2>
-    // <ul>
-    //     <li>Hands-on exercise: Instrumenting a Go application with OpenTelemetry.</li>
-    //     <li>Generating and exporting metrics, traces, and logs.</li>
-    // </ul>
-
-    // <h2>Visualizing Insights with Grafana:</h2>
-    // <ul>
-    //     <li>Setting up Grafana for visualizing telemetry data.</li>
-    //     <li>Creating dashboards to monitor key metrics and traces.</li>
-    // </ul>
-
-    // <h2>Logging for Contextual Observability:</h2>
-    // <ul>
-    //     <li>Hands-on exercise: Implementing structured logging in Go with OpenTelemetry.</li>
-    //     <li>Enhancing logs with contextual information for better traceability.</li>
-    // </ul>
-
-    // <h2>Error Handling and Alerting:</h2>
-    // <ul>
-    //     <li>Strategies for effective error handling in Go applications.</li>
-    //     <li>Configuring alerts based on metrics and traces in Grafana.</li>
-    // </ul>
-
-    // <h2>Q&A Session and Open Discussion:</h2>
-    // <ul>
-    //     <li>Best practices and challenges</li>
-    // </ul>`,
-    //   level: "All attendees",
-    //   name: "Desmond Obisi",
-    //   role: "Software Engineer",
-    //   company: "Resilis",
-    //   titleDescription: "",
-    //   day: "18th"
-    // },
     {
       startTime: '11:30AM',
       date: '11:30AM - 11:45AM EAT, Fri Oct 18th',
@@ -379,52 +330,6 @@ const SessionsList = (): Array<ISession> => {
       titleDescription: "",
       day: "19th"
     },
-    // {
-    //     startTime: '11:00AM',
-    //     date: '11:00AM - 11:40AM EAT, Sat Oct 19th',
-    //     duration: 'Main Talk 40 Min',
-    //     title: 'Hands-On Observability: Monitoring Go Applications with OpenTelemetry and Grafana',
-    //     room: 'Main Conference Hall, iHub',
-    //     description: "<h1>Workshop Agenda</h1>\n" +
-    //         "    <br>   " +
-    //         "    <h2>Setting the Stage:</h2>\n" +
-    //         "    <ul>\n" +
-    //         "        <li>- Introduction to observability and its importance in Go applications.</li>\n" +
-    //         "        <li>- Overview of OpenTelemetry and Grafana and their roles in observability.</li>\n" +
-    //         "    </ul>\n" +
-    //         "<br>" +
-    //         "    <h2>Instrumenting Your Go Code:</h2>\n" +
-    //         "    <ul>\n" +
-    //         "        <li>- Hands-on exercise: Instrumenting a Go application with OpenTelemetry.</li>\n" +
-    //         "        <li>- Generating and exporting metrics, traces, and logs.</li>\n" +
-    //         "    </ul>\n" +
-    //         "<br>" +
-    //         "    <h2>Visualizing Insights with Grafana:</h2>\n" +
-    //         "    <ul>\n" +
-    //         "        <li>Setting up Grafana for visualizing telemetry data.</li>\n" +
-    //         "        <li>Creating dashboards to monitor key metrics and traces.</li>\n" +
-    //         "    </ul>\n" +
-    //         "<br>" +
-    //         "    <h2>Logging for Contextual Observability:</h2>\n" +
-    //         "    <ul>\n" +
-    //         "        <li>- Hands-on exercise: Implementing structured logging in Go with OpenTelemetry.</li>\n" +
-    //         "        <li>- Enhancing logs with contextual information for better traceability.</li>\n" +
-    //         "    </ul>\n" +
-    //         "<br>" +
-    //         "    <h2>Error Handling and Alerting:</h2>\n" +
-    //         "    <ul>\n" +
-    //         "        <li>- Strategies for effective error handling in Go applications.</li>\n" +
-    //         "        <li>- Configuring alerts based on metrics and traces in Grafana.</li>\n" +
-    //         "    </ul>\n" +
-    //         "\n" +
-    //         "    <h2>Q&A Session and Open Discussion:</h2>",
-    //     level: "All attendees",
-    //     name: "Desmond Obisi",
-    //     role: "S/W Engineer",
-    //     company: "",
-    //     titleDescription: "",
-    //     day: "19th"
-    // },
     {
       startTime: '11:00AM',
       date: '11:00AM - 11:40AM EAT, Sat Oct 19th',
