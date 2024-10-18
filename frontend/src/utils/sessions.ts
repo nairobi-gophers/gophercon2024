@@ -117,7 +117,7 @@ const SessionsList = (): Array<ISession> => {
       day: "18th"
     },
     {
-      startTime: '2:30PM',
+      startTime: '2:30AM',
       date: '2:30PM - 2:55PM EAT, Fri Oct 18th',
       duration: 'Lightening Talk 25 Min',
       title: 'Building a Local Go Community as a Student',
@@ -131,7 +131,7 @@ const SessionsList = (): Array<ISession> => {
       company: "",
       titleDescription: "",
       day: "18th",
-      twitter: "taiwrash"
+      twitter: 'taiwrash'
     },
     {
       startTime: '2:55PM',
@@ -352,15 +352,14 @@ const SessionsList = (): Array<ISession> => {
       title: 'Unveiling the Power of Interfaces: Go’s Secret Weapon',
       room: 'Main Conference Hall, iHub',
       description: "Interfaces are one of the most powerful and versatile features in Go, yet their true potential is often overlooked or underutilized. In this talk, we’ll unveil the secrets behind interfaces and demonstrate how to harness their full power to write more maintainable, testable, and flexible code. \n\n" +
-        "What You’ll Learn \n- Understand the fundamental principles of interface design in Go\n" +
-        "- Learn best practices for implementing interfaces effectively",
+      "What You’ll Learn \n- Understand the fundamental principles of interface design in Go\n" +
+      "- Learn best practices for implementing interfaces effectively",
       level: "All attendees",
       name: "Sammy Oina",
       role: "Technical lead",
       company: "Ultraviolet",
       titleDescription: "",
       day: "19th",
-      twitter: ''
     },
     {
       startTime: '12:05PM',
