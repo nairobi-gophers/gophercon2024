@@ -253,7 +253,7 @@ const SessionsList = (): Array<ISession> => {
     },
     {
       startTime: '7:30AM',
-      date: '7:30AM - 9:00AM EAT, Sat Oct 19th',
+      date: '7:30AM - 10:00AM EAT, Sat Oct 19th',
       duration: '1h 30Min',
       title: 'Registration And Gopher Merch Shop',
       room: 'iHub',
@@ -266,8 +266,8 @@ const SessionsList = (): Array<ISession> => {
       day: "19th"
     },
     {
-      startTime: '9:00AM',
-      date: '9:00AM - 10:00AM EAT, Sat Oct 19th',
+      startTime: '10:00AM',
+      date: '10:00AM - 11:00AM EAT, Sat Oct 19th',
       duration: '1h',
       title: 'Keynote',
       room: 'Main Conference Hall, iHub',
@@ -280,8 +280,8 @@ const SessionsList = (): Array<ISession> => {
       day: "19th"
     },
     {
-      startTime: '10:00AM',
-      date: '10:00AM - 10:40AM EAT, Sat Oct 19th',
+      startTime: '11:00AM',
+      date: '11:00AM - 11:40AM EAT, Sat Oct 19th',
       duration: 'Main Talk 40 Min',
       title: 'Effective Testing Strategies for Large Data Inserts into PostgreSQL Tables',
       room: 'Main Conference Hall, iHub',
@@ -318,8 +318,8 @@ const SessionsList = (): Array<ISession> => {
       day: "19th"
     },
     {
-      startTime: '10:40AM',
-      date: '10:40AM - 11:00AM EAT, Fri Oct 19th',
+      startTime: '11:40AM',
+      date: '11:40AM - 12:00PM EAT, Fri Oct 19th',
       duration: '20Min',
       title: 'Coffee Break',
       room: 'iHub',
@@ -332,8 +332,8 @@ const SessionsList = (): Array<ISession> => {
       day: "19th"
     },
     {
-      startTime: '11:00AM',
-      date: '11:00AM - 11:40AM EAT, Sat Oct 19th',
+      startTime: '12:00PM',
+      date: '12:00PM - 12:40PM EAT, Sat Oct 19th',
       duration: 'Main Talk 40 Min',
       title: 'SDK Secrets: Unlocking API Magic',
       room: 'Main Conference Hall, iHub',
@@ -346,8 +346,8 @@ const SessionsList = (): Array<ISession> => {
       day: "19th"
     },
     {
-      startTime: '11:40AM',
-      date: '11:40AM - 12:05PM EAT, Sat Oct 19th',
+      startTime: '12:40PM',
+      date: '12:40PM - 1:05PM EAT, Sat Oct 19th',
       duration: 'Lightening Talk 25 Min',
       title: 'Unveiling the Power of Interfaces: Go’s Secret Weapon',
       room: 'Main Conference Hall, iHub',
@@ -362,8 +362,8 @@ const SessionsList = (): Array<ISession> => {
       day: "19th",
     },
     {
-      startTime: '12:05PM',
-      date: '12:05PM - 12:45PM EAT, Sat Oct 19th',
+      startTime: '1:05PM',
+      date: '1:05PM - 1:45PM EAT, Sat Oct 19th',
       duration: 'Main Talk 40 Min',
       title: 'Understanding Entropy in Design Systems',
       room: 'Main Conference Hall, iHub',
@@ -391,8 +391,8 @@ const SessionsList = (): Array<ISession> => {
       day: "19th"
     },
     {
-      startTime: '12:45PM',
-      date: '12:45PM - 1:15PM EAT, Sat Oct 19th',
+      startTime: '1:45PM',
+      date: '1:45PM - 2:15PM EAT, Sat Oct 19th',
       duration: 'Community 30 Min',
       title: 'Community Roundtable',
       room: 'Main Conference Hall, iHub',
@@ -405,8 +405,8 @@ const SessionsList = (): Array<ISession> => {
       day: "19th"
     },
     {
-      startTime: '1:15PM',
-      date: '1:15PM - 2:00PM EAT, Fri Oct 19th',
+      startTime: '2:15PM',
+      date: '2:15PM - 3:00PM EAT, Fri Oct 19th',
       duration: '45Min',
       title: 'Lunch Break',
       room: 'iHub',
@@ -419,8 +419,8 @@ const SessionsList = (): Array<ISession> => {
       day: "19th"
     },
     {
-      startTime: '2:00PM',
-      date: '2:00PM - 2:25PM EAT, Sat Oct 19th',
+      startTime: '3:00PM',
+      date: '3:00PM - 3:25PM EAT, Sat Oct 19th',
       duration: 'Lightening Talk 25 Min',
       title: 'Realizing Hexagonal Architecture in Go',
       room: 'Main Conference Hall, iHub',
@@ -439,8 +439,8 @@ const SessionsList = (): Array<ISession> => {
       day: "19th"
     },
     {
-      startTime: '2:25PM',
-      date: '2:25PM - 3:05PM EAT, Sat Oct 19th',
+      startTime: '3:25PM',
+      date: '3:25PM - 4:05PM EAT, Sat Oct 19th',
       duration: 'Main Talk 40 Min',
       title: 'Mastering Intra-Service Communication in Go with gRPC',
       room: 'Main Conference Hall, iHub',
@@ -466,7 +466,7 @@ const SessionsList = (): Array<ISession> => {
     },
     {
       startTime: '',
-      date: '2:25PM - 3:05PM EAT, Sat Oct 19th',
+      date: '3:25PM - 4:05PM EAT, Sat Oct 19th',
       duration: 'Main Talk 40 Min',
       title: 'Engineering Reliable gRPC APIs: The World of Instrumentation',
       room: 'Boardroom I, iHub',
@@ -479,8 +479,8 @@ const SessionsList = (): Array<ISession> => {
       day: "19th"
     },
     {
-      startTime: '3:05PM',
-      date: '3:05PM - 3:45PM EAT, Sat Oct 19th',
+      startTime: '4:05PM',
+      date: '4:05PM - 4:45PM EAT, Sat Oct 19th',
       duration: 'Main Talk 40 Min',
       title: 'Testing in Go: Unlocking Confidence and Efficiency',
       room: 'Main Conference Hall, iHub',
@@ -506,8 +506,8 @@ const SessionsList = (): Array<ISession> => {
       day: "19th"
     },
     {
-      startTime: '3:45PM',
-      date: '3:45PM - 4:15PM EAT, Sat Oct 19th',
+      startTime: '4:45PM',
+      date: '4:45PM - 5:15PM EAT, Sat Oct 19th',
       duration: 'Community 30 Min',
       title: 'Panel Discussion [Podcast]: The State of Golang in Africa',
       room: 'Main Conference Hall, iHub',
@@ -520,40 +520,12 @@ const SessionsList = (): Array<ISession> => {
       day: "19th"
     },
     {
-      startTime: '4:15PM',
-      date: '4:15PM - 4:30PM EAT, Sat Oct 19th',
+      startTime: '5:15PM',
+      date: '5:15PM - 5:30PM EAT, Sat Oct 19th',
       duration: 'Closing Remarks 15 Min',
       title: 'Closing Remarks and Sponsors Appreciation',
       room: 'Main Conference Hall, iHub',
       description: "This is a great chance to connect with the Go community and event sponsors, allowing you to ask questions and learn more about Go and its growing community in Africa.",
-      level: "All attendees",
-      name: "",
-      role: "",
-      company: "",
-      titleDescription: "",
-      day: "19th"
-    },
-    {
-      startTime: '4:30PM',
-      date: '4:30PM - 5:00PM EAT, Sat Oct 19th',
-      duration: '30 Min',
-      title: 'Commute To GopherCon Party (TBC)',
-      room: 'TBC',
-      description: "",
-      level: "All attendees",
-      name: "",
-      role: "",
-      company: "",
-      titleDescription: "",
-      day: "19th"
-    },
-    {
-      startTime: '5:00PM',
-      date: '5:00PM - 9:00PM EAT, Sat Oct 19th',
-      duration: '4 Hr',
-      title: 'First GopherCon Africa Party (TBC)',
-      room: 'TBC',
-      description: "",
       level: "All attendees",
       name: "",
       role: "",
