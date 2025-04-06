@@ -1,8 +1,8 @@
-import Sponsors from "../components/Sponsors.tsx";
-import CallForSpeakers from "../components/CallForSpeakers.tsx";
+// import Sponsors from "../components/Sponsors.tsx";
+// import CallForSpeakers from "../components/CallForSpeakers.tsx";
+// import Ticket from "../components/Ticket.tsx";
 import ConnectWithUs from "../components/ConnectWithUs.tsx";
 import { Footer } from "../components/Footer.tsx";
-import Ticket from "../components/Ticket.tsx";
 import world from '../assets/world.svg';
 import GopherconForAll from "../components/GopherconForAll.tsx";
 import Navbar from "../components/Navbar.tsx";
@@ -10,10 +10,12 @@ import { HomeBanner } from "../components/HomeBanner.tsx";
 import TravelInfoIntro from "../components/TravelInfoIntro.tsx";
 
 const Home = () => {
+  /*
   function scroll(to: string) {
     const element = document.getElementById(to) as HTMLElement;
     element.scrollIntoView({ block: "start" });
   }
+  */
 
   return (
     <div className="text-sm id" id='home'>
