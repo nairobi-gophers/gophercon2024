@@ -22,15 +22,15 @@ const Home = () => {
         <img src={world} alt='world' className="lg:w-full h-full object-cover" />
         <div className="absolute top-16 lg:top-0 lg:bottom-0 my-auto p-6 lg:p-3 lg:w-[750px] mx-auto text-center left-0 right-0 h-fit flex flex-col gap-6">
           <HomeBanner />
-          <button className="px-8 py-3 text-white bg-primary  w-fit mx-auto rounded shadow font-semibold"
+          {/*<button className="px-8 py-3 text-white bg-primary  w-fit mx-auto rounded shadow font-semibold"
             onClick={() => scroll('tickets')}
-          >Get Tickets</button>
+          >Get Tickets</button>*/}
         </div>
       </div>
-      <CallForSpeakers />
-      <Ticket />
+      {/*<CallForSpeakers />*/}
+      {/*<Ticket />*/}
       <GopherconForAll />
-      <Sponsors />
+      {/*<Sponsors />*/}
       <TravelInfoIntro />
       <ConnectWithUs />
       <Footer />

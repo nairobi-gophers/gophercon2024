@@ -9,10 +9,11 @@ export function HomeBanner() {
       <div className="w-fit p-8 space-y-2 mx-auto border border-secondary rounded-md bg-white">
         <p><b>Date:</b> 17th - 18th October 2025</p>
         <p><b>City:</b> Nairobi, Kenya</p>
+        {/*
         <p><b>Venue:</b> iHub</p>
         <div>
           <a className="text-decoration-line: underline" href="https://maps.app.goo.gl/ysBLZUary5EmqR6t7" target="_blank"><span className="font-semibold">Google Maps </span> <span>Jahazi Building, 154 James Gichuru Road</span></a>
-        </div>
+        </div>*/}
       </div>
 
     </>
